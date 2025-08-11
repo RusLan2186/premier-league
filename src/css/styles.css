@@ -149,12 +149,7 @@ html {
   padding-left: 15px;
   padding-right: 15px;
 }
-.media__subtitle {
-  font-size: 16px;
-  font-weight: 700;
-  color: rgb(135, 102, 138);
-  text-transform: uppercase;
-}
+
 .title--30 {
   font-size: 30px;
   font-weight: 700;
