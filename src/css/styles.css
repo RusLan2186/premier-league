@@ -1,17 +1,19 @@
 @import 'normalize.css';
 @import 'header.css';
 @import 'matches.css';
-@import 'news-and-res.css';
+@import 'news.css';
+@import 'video.css';
+@import 'tables.css';
 @import 'swiper.css';
 
-@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;700&display=swap');
+
 
 html {
   font-size: 16px;
 }
 
 .body {
-  font-family: 'Amiko', serif;
+font-family: 'Times New Roman', serif;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -210,7 +212,7 @@ html {
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 5px;
-  padding-top: 7px;
+  padding-top: 5px;
   transition: 0.4s all ease;
   background: #24c4fc;
 }
@@ -234,64 +236,23 @@ html {
 .media__rows {
   column-gap: 30px;
 }
-.video__block {
-  display: grid;
-  grid-template-columns: 35% 1fr;
-  border-style: solid;
-  border-color: rgb(255, 255, 255);
-  border-radius: 10px;
-  border-width: 2px;
-  margin-bottom: 20px;
-}
-.video__text_wrap {
-  background: #37003c;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  border-radius: 10px 0px 0px 10px;
-  color: rgb(255, 255, 255);
-}
+
 .title-link--30 {
   font-size: 30px;
   font-weight: 700;
   color: rgb(255, 255, 255);
   text-transform: capitalize;
 }
-.video__text_block {
-  margin-bottom: 40px;
-  row-gap: 10px;
-}
-.video__img {
-  border-radius: 0px 10px 10px 0px;
-  object-position: 100% 0%;
-}
+
+
 .link__btn--big {
   font-size: 18px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 7px;
-  padding-top: 7px;
+  padding-top: 10px;
 }
-.play__icon_block {
-  align-items: center;
-  display: inline-flex;
-  font-size: 16px;
-  font-weight: 700;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: rgb(255, 255, 255);
-  column-gap: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  background: #24c4fc;
-}
-.play__icon {
-  height: 20px;
-}
+
 .media__cards {
   column-gap: 15px;
   row-gap: 15px;
@@ -300,48 +261,7 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.grid-pts-tbl-sm {
-  display: grid;
-  grid-template-columns: 10% 35% repeat(5, 1fr);
-}
-.table__head {
-  background-image: url('../images/41b409eee00c491fb4e21eba4d62121a.jpg');
-  border-radius: 25px 25px 0px 0px;
-  background-size: cover;
-  font-size: 16px;
-  font-weight: 600;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  text-transform: uppercase;
-}
-.text-left {
-  text-align: left;
-}
-.table__body {
-  align-items: center;
-  background: #fff;
-  border-style: solid;
-  border-width: thin;
-  border-color: rgb(36, 196, 252);
-  border-top-width: 0;
-  font-size: 17px;
-  font-weight: 500;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  color: rgb(55, 0, 60);
-  text-align: center;
-  text-transform: uppercase;
-}
-.table__team_block {
-  align-items: center;
-  display: flex;
-  font-size: 17px;
-  font-weight: 700;
-  text-transform: uppercase;
-  column-gap: 10px;
-}
+
 .title--20 {
   font-size: 20px;
   font-weight: 700;
