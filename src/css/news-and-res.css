@@ -1,0 +1,36 @@
+.news__rows {
+  column-gap: 30px;
+  display: grid;
+  grid-template-columns: 69% 1fr;
+}
+
+
+
+.news__img_block--big {
+  height: 100%;
+}
+
+.news-title--30 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 35px;
+}
+
+.news__items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.news-item__img_block {
+  padding-bottom: 50%;
+}
+
+.news-title--22 {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+
