@@ -5,6 +5,7 @@
 @import 'video.css';
 @import 'tables.css';
 @import 'clubs.css';
+@import 'players.css';
 @import 'swiper.css';
 
 
@@ -289,57 +290,11 @@ font-family: 'Times New Roman', serif;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-.player-card__body {
-  display: grid;
-  grid-template-columns: auto 1fr;
-}
-.player-card__footer {
-  background-color: rgb(255, 255, 255);
-  border-radius: 0px 0px 10px 10px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  font-size: 17px;
-  font-weight: 700;
-  text-transform: capitalize;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-.player-stats__block {
-  row-gap: 5px;
-  border-radius: 10px 0px 0px 0px;
-  background: #37003c;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-  align-items: center;
-}
+
 .logo-40 {
   height: 40px;
 }
-.player-stats__item {
-  font-size: 14px;
-  font-weight: 500;
-  color: rgb(255, 255, 255);
-  text-transform: capitalize;
-}
-.player__img_block {
-  border-radius: 0px 10px 0px 0px;
-  height: 100%;
-  background-color: rgb(36, 196, 252);
-  transition: 0.3s all ease;
-}
-.player__img_block:hover {
-  transition: 0.3s all ease;
-  background-color: rgb(0, 149, 203);
-}
-.player__img {
-  object-position: 50% 0%;
-}
+
 .hover-scale {
   transition: 0.3s scale;
 }
