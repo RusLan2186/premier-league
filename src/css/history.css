@@ -1,0 +1,20 @@
+.history__rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 20px;
+}
+
+.history__img_block {
+  aspect-ratio: 16/9;
+}
+
+@media (max-width: 991.98px) {
+  .history__rows {
+    grid-template-columns: 1fr;
+  }
+
+  .history__img_block {
+    padding-bottom: 60%;
+  }
+}
