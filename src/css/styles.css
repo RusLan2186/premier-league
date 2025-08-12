@@ -4,6 +4,7 @@
 @import 'news.css';
 @import 'video.css';
 @import 'tables.css';
+@import 'clubs.css';
 @import 'swiper.css';
 
 
@@ -195,7 +196,6 @@ font-family: 'Times New Roman', serif;
   color: rgb(135, 102, 138);
 }
 
-
 .logo--30 {
   height: 30px;
   width: 30px;
@@ -276,60 +276,12 @@ font-family: 'Times New Roman', serif;
   row-gap: 20px;
   column-gap: 20px;
 }
-.club__head {
-  background: #37003c;
-  border-radius: 10px 10px 0px 0px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  display: block;
-  transition: 0.3s all ease;
-  column-gap: 20px;
-  text-align: center;
-}
-.club__head:hover {
-  background: #ff2882;
-  transition: 0.3s all ease;
-}
-.club__body {
-  background-color: rgb(255, 255, 255);
-  border-radius: 0px 0px 10px 10px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  row-gap: 20px;
-}
-.club-stats__item {
-  background: #37003c;
-  color: rgb(255, 255, 255);
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 10px;
-  font-size: 17px;
-  font-weight: 500;
-  text-transform: capitalize;
-  padding-bottom: 5px;
-  padding-top: 2px;
-  flex-basis: 22%;
-  text-align: center;
-}
+
 .title-26 {
   font-size: 26px;
   font-weight: 700;
 }
-.club__info {
-}
-.club-info__item {
-  align-items: center;
-  display: flex;
-  font-size: 15px;
-  font-weight: 500;
-  column-gap: 5px;
-  text-transform: capitalize;
-  flex-basis: 32%;
-  justify-content: center;
-}
+
 .link__btn--dark {
   background: #37003c;
 }
