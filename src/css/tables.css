@@ -3,8 +3,7 @@
   grid-template-columns: 10% 35% repeat(5, 1fr);
 }
 .table__head {
-  background-image: url('../images/41b409eee00c491fb4e21eba4d62121a.jpg');
-  border-radius: 25px 25px 0px 0px;
+  background-color: rgb(36, 196, 252);
   background-size: cover;
   font-size: 16px;
   font-weight: 600;

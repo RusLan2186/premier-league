@@ -1,183 +1,600 @@
 <!DOCTYPE html>
 <html lang="pt">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>video</title>
-    <meta name="description" content="This is a new page.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="This is a new page." />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
     <div class="body">
-      <div class="header">
+      <header class="header">
         <div class="container">
-          <div class="header__content flx-btwn"><a class="link-reset header__logo_link" href="https://premier-league.pt/"><img class="header__logo_img" src="/images/a8f2a93a34cda4bff38522176fe03bb9.jpg" /></a>
-            <div class="header__nav">
-              <ul class="header__nav_list reset">
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/post">post</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/video-post">video post</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/news">news</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/stats">stats</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/review">review</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/calendar">calendar</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/results">results</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/history">history</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/video">video</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/lives">lives</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/club">club</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/clubs">clubs</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/player">player</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/contact">contact</a></li>
+          <div class="header__content">
+            <a class="link-reset header__logo_link" href="./index.html"
+              ><img
+                class="header__logo_img"
+                src="/images/a8f2a93a34cda4bff38522176fe03bb9.jpg"
+            /></a>
+            <nav class="header__nav">
+              <ul class="header__nav_list">
+                <li>
+                  <a class="link-reset header__nav_link" href="./post.html"
+                    >post</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="./video-post.html"
+                    >video post</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./news.html"
+                    >news</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./stats.html"
+                    >stats</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./review.html"
+                    >review</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./calendar.html"
+                    >calendar</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./results.html"
+                    >results</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./history.html"
+                    >history</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./video.html"
+                    >video</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./lives.html"
+                    >lives</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./club.html"
+                    >club</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./clubs.html"
+                    >clubs</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./player.html"
+                    >player</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./contact.html"
+                    >contact</a
+                  >
+                </li>
               </ul>
-            </div>
+            </nav>
+            <button class="header__burger">
+              <span class="header__burger-line"></span>
+            </button>
           </div>
         </div>
-      </div>
-      <div class="main">
-        <div class="video__section mb-50">
+      </header>
+      <main class="main">
+        <section class="video__section section">
           <div class="container">
-            <div class="title__block"><img src="/images/58fddc8e0951782199d971229c9a0382.png" class="logo-70" />
+            <div class="title__block">
+              <img
+                src="/images/58fddc8e0951782199d971229c9a0382.png"
+                class="title__block_logo"
+              />
               <h2 class="title mb-reset">latest video</h2>
             </div>
-            <div class="media__wrapper">
+            <div class="video__content">
               <div class="video__block">
                 <div class="video__text_wrap">
-                  <div class="video__text_block flx-clmn"><a class="hover-text link-reset title-link--30">Watch: The story of Liverpool Premier League title win</a>
-                    <p class="mb-reset">Watch all the highlights of how the Reds became champions in 2024/25. Relive every thrilling moment as Liverpool stormed to Premier League glory, showcasing breathtaking football, dramatic comebacks, and unforgettable goals. From their relentless unbeaten run at Anfield to key victories over their closest rivals, every highlight tells the story of a team united by passion, skill, and determination.</p>
+                  <div class="video__text_block">
+                    <a class="video__title--27"
+                      >Watch: The story of Liverpool Premier League title win</a
+                    >
+                    <p class="mb-reset">
+                      Watch every decisive moment from the Reds’ unforgettable
+                      2024/25 campaign — goals, turning points and celebrations
+                      that secured the title. Relive the season in full
+                      highlights.
+                    </p>
                   </div>
-                  <div class="link__block"><a href="#" class="link-reset link__btn link__btn--big">watch video</a></div>
-                </div><a href="#" class="link-reset image-block h-100pcr"><img class="ibg video__img" src="/images/1f0c74f990fe135206103de5dd962453.webp" />
-                  <div class="play__icon_block text--hover"><img class="play__icon" src="/images/536a3d967c67001edd112a308d3fa6f7.png" /><span>09:42</span></div>
+                  <div class="link__block">
+                    <a href="#" class="link-reset link__btn link__btn--big"
+                      >watch video</a
+                    >
+                  </div>
+                </div>
+                <a href="#" class="link-reset image-block video__img_block"
+                  ><img
+                    class="ibg video__img"
+                    src="/images/1f0c74f990fe135206103de5dd962453.webp"
+                  />
+                  <div class="play__icon_block">
+                    <svg
+                      class="play__icon"
+                      version="1.1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 330 330"
+                      xml:space="preserve"
+                      stroke-width="1"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          id="XMLID_497_"
+                          d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                        ></path>
+                      </g>
+                    </svg>
+                    <span>09:42</span>
+                  </div>
                 </a>
               </div>
-              <div class="media__cards grid-cols-3"><a href="#" class="link-reset media__item text--hover">
-                  <div class="image-block pb-60pcr"><img class="media__img ibg" src="/images/270afc6417aca28dd116eb431794aaaf.webp" />
-                    <div class="play__icon_block text--hover"><img class="play__icon" src="/images/536a3d967c67001edd112a308d3fa6f7.png" /><span>02:07</span></div>
-                  </div>
-                  <div class="media__text_block flx-clmn">
-                    <p class="media__subtitle mb-reset">video</p>
-                    <h3 class="mb-reset title--22">Slot: My family made sacrifices, but title made it worthwhile
-                    </h3>
-                  </div>
-                </a><a href="#" class="link-reset media__item text--hover">
-                  <div class="image-block pb-60pcr"><img class="media__img ibg" src="/images/fa5050c091146164f75386415c183987.webp" />
-                    <div class="play__icon_block text--hover"><img class="play__icon" src="/images/536a3d967c67001edd112a308d3fa6f7.png" /><span>03:15</span></div>
-                  </div>
-                  <div class="media__text_block flx-clmn">
-                    <p class="media__subtitle mb-reset">video</p>
-                    <h3 class="mb-reset title--22">watch the best goals in match manchester city vs liverpool</h3>
-                  </div>
-                </a><a href="#" class="link-reset media__item text--hover">
-                  <div class="image-block pb-60pcr"><img class="media__img ibg" src="/images/4c7f3f00bfa7bf700f188e604fb9185a.webp" />
-                    <div class="play__icon_block text--hover"><img class="play__icon" src="/images/536a3d967c67001edd112a308d3fa6f7.png" /><span>04:47</span></div>
-                  </div>
-                  <div class="media__text_block flx-clmn">
-                    <p class="media__subtitle mb-reset">video</p>
-                    <h3 class="mb-reset title--22">Aston Villa v Forest: Watch Martinez wonder save in reverse fixture
-                    </h3>
-                  </div>
-                </a><a href="#" class="link-reset media__item text--hover">
-                  <div class="image-block pb-60pcr"><img class="media__img ibg" src="/images/4c7f3f00bfa7bf700f188e604fb9185a.webp" />
-                    <div class="play__icon_block text--hover"><img class="play__icon" src="/images/536a3d967c67001edd112a308d3fa6f7.png" /><span>04:47</span></div>
-                  </div>
-                  <div class="media__text_block flx-clmn">
-                    <p class="media__subtitle mb-reset">video</p>
-                    <h3 class="mb-reset title--22">Aston Villa v Forest: Watch Martinez wonder save in reverse fixture
-                    </h3>
-                  </div>
-                </a><a href="#" class="link-reset media__item text--hover">
-                  <div class="image-block pb-60pcr"><img class="media__img ibg" src="/images/270afc6417aca28dd116eb431794aaaf.webp" />
-                    <div class="play__icon_block text--hover"><img class="play__icon" src="/images/536a3d967c67001edd112a308d3fa6f7.png" /><span>02:07</span></div>
-                  </div>
-                  <div class="media__text_block flx-clmn">
-                    <p class="media__subtitle mb-reset">video</p>
-                    <h3 class="mb-reset title--22">Slot: My family made sacrifices, but title made it worthwhile
-                    </h3>
-                  </div>
-                </a><a href="#" class="link-reset media__item text--hover">
-                  <div class="image-block pb-60pcr"><img class="media__img ibg" src="/images/fa5050c091146164f75386415c183987.webp" />
-                    <div class="play__icon_block text--hover"><img class="play__icon" src="/images/536a3d967c67001edd112a308d3fa6f7.png" /><span>03:15</span></div>
-                  </div>
-                  <div class="media__text_block flx-clmn">
-                    <p class="media__subtitle mb-reset">video</p>
-                    <h3 class="mb-reset title--22">watch the best goals in match manchester city vs liverpool</h3>
-                  </div>
-                </a><a href="#" class="link-reset media__item text--hover">
-                  <div class="image-block pb-60pcr"><img class="media__img ibg" src="/images/fa5050c091146164f75386415c183987.webp" />
-                    <div class="play__icon_block text--hover"><img class="play__icon" src="/images/536a3d967c67001edd112a308d3fa6f7.png" /><span>03:15</span></div>
-                  </div>
-                  <div class="media__text_block flx-clmn">
-                    <p class="media__subtitle mb-reset">video</p>
-                    <h3 class="mb-reset title--22">watch the best goals in match manchester city vs liverpool</h3>
-                  </div>
-                </a><a href="#" class="link-reset media__item text--hover">
-                  <div class="image-block pb-60pcr"><img class="media__img ibg" src="/images/4c7f3f00bfa7bf700f188e604fb9185a.webp" />
-                    <div class="play__icon_block text--hover"><img class="play__icon" src="/images/536a3d967c67001edd112a308d3fa6f7.png" /><span>04:47</span></div>
-                  </div>
-                  <div class="media__text_block flx-clmn">
-                    <p class="media__subtitle mb-reset">video</p>
-                    <h3 class="mb-reset title--22">Aston Villa v Forest: Watch Martinez wonder save in reverse fixture
-                    </h3>
-                  </div>
-                </a><a href="#" class="link-reset media__item text--hover">
-                  <div class="image-block pb-60pcr"><img class="media__img ibg" src="/images/270afc6417aca28dd116eb431794aaaf.webp" />
-                    <div class="play__icon_block text--hover"><img class="play__icon" src="/images/536a3d967c67001edd112a308d3fa6f7.png" /><span>02:07</span></div>
-                  </div>
-                  <div class="media__text_block flx-clmn">
-                    <p class="media__subtitle mb-reset">video</p>
-                    <h3 class="mb-reset title--22">Slot: My family made sacrifices, but title made it worthwhile
-                    </h3>
-                  </div>
-                </a></div>
+              <div class="video__cards">
+                <article>
+                  <a href="#" class="link-reset media__item text--hover">
+                    <div class="image-block video__item_img-block">
+                      <img
+                        class="media__img ibg"
+                        src="/images/270afc6417aca28dd116eb431794aaaf.webp"
+                      />
+                      <div class="play__icon_block">
+                        <svg
+                          class="play__icon"
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 330 330"
+                          xml:space="preserve"
+                          stroke-width="1"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              id="XMLID_497_"
+                              d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                            ></path>
+                          </g>
+                        </svg>
+                        <span>06:12</span>
+                      </div>
+                    </div>
+                    <div class="media__text_block flx-clmn">
+                      <p class="media__subtitle mb-reset">video</p>
+                      <h3 class="mb-reset video__item_title">
+                        Slot: My family made sacrifices, but title made it
+                        worthwhile
+                      </h3>
+                    </div>
+                  </a>
+                </article>
+                <article>
+                  <a href="#" class="link-reset media__item text--hover">
+                    <div class="image-block video__item_img-block">
+                      <img
+                        class="media__img ibg"
+                        src="/images/92f92111f5367dcafa65e4b01b504624.webp"
+                      />
+                      <div class="play__icon_block">
+                        <svg
+                          class="play__icon"
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 330 330"
+                          xml:space="preserve"
+                          stroke-width="1"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              id="XMLID_497_"
+                              d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                            ></path>
+                          </g>
+                        </svg>
+                        <span>02:38</span>
+                      </div>
+                    </div>
+                    <div class="media__text_block flx-clmn">
+                      <p class="media__subtitle mb-reset">video</p>
+                      <h3 class="mb-reset video__item_title">
+                        watch the best goals in match manchester city vs
+                        liverpool
+                      </h3>
+                    </div>
+                  </a>
+                </article>
+                <article>
+                  <a href="#" class="link-reset media__item text--hover">
+                    <div class="image-block video__item_img-block">
+                      <img
+                        class="media__img ibg"
+                        src="/images/4c7f3f00bfa7bf700f188e604fb9185a.webp"
+                      />
+                      <div class="play__icon_block">
+                        <svg
+                          class="play__icon"
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 330 330"
+                          xml:space="preserve"
+                          stroke-width="1"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              id="XMLID_497_"
+                              d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                            ></path>
+                          </g>
+                        </svg>
+                        <span>09:42</span>
+                      </div>
+                    </div>
+                    <div class="media__text_block flx-clmn">
+                      <p class="media__subtitle mb-reset">video</p>
+                      <h3 class="mb-reset video__item_title">
+                        Aston Villa v Forest: Watch Martinez wonder save in
+                        reverse fixture
+                      </h3>
+                    </div>
+                  </a>
+                </article>
+                <article>
+                  <a href="#" class="link-reset media__item text--hover">
+                    <div class="image-block video__item_img-block">
+                      <img
+                        class="media__img ibg"
+                        src="/images/fa5050c091146164f75386415c183987.webp"
+                      />
+                      <div class="play__icon_block">
+                        <svg
+                          class="play__icon"
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 330 330"
+                          xml:space="preserve"
+                          stroke-width="1"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              id="XMLID_497_"
+                              d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                            ></path>
+                          </g>
+                        </svg>
+                        <span>06:12</span>
+                      </div>
+                    </div>
+                    <div class="media__text_block flx-clmn">
+                      <p class="media__subtitle mb-reset">video</p>
+                      <h3 class="mb-reset video__item_title">
+                        Slot: My family made sacrifices, but title made it
+                        worthwhile
+                      </h3>
+                    </div>
+                  </a>
+                </article>
+                <article>
+                  <a href="#" class="link-reset media__item text--hover">
+                    <div class="image-block video__item_img-block">
+                      <img
+                        class="media__img ibg"
+                        src="/images/92f92111f5367dcafa65e4b01b504624.webp"
+                      />
+                      <div class="play__icon_block">
+                        <svg
+                          class="play__icon"
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 330 330"
+                          xml:space="preserve"
+                          stroke-width="1"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              id="XMLID_497_"
+                              d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                            ></path>
+                          </g>
+                        </svg>
+                        <span>02:38</span>
+                      </div>
+                    </div>
+                    <div class="media__text_block flx-clmn">
+                      <p class="media__subtitle mb-reset">video</p>
+                      <h3 class="mb-reset video__item_title">
+                        watch the best goals in match manchester city vs
+                        liverpool
+                      </h3>
+                    </div>
+                  </a>
+                </article>
+                <article>
+                  <a href="#" class="link-reset media__item text--hover">
+                    <div class="image-block video__item_img-block">
+                      <img
+                        class="media__img ibg"
+                        src="/images/270afc6417aca28dd116eb431794aaaf.webp"
+                      />
+                      <div class="play__icon_block">
+                        <svg
+                          class="play__icon"
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 330 330"
+                          xml:space="preserve"
+                          stroke-width="1"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              id="XMLID_497_"
+                              d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                            ></path>
+                          </g>
+                        </svg>
+                        <span>06:12</span>
+                      </div>
+                    </div>
+                    <div class="media__text_block flx-clmn">
+                      <p class="media__subtitle mb-reset">video</p>
+                      <h3 class="mb-reset video__item_title">
+                        Slot: My family made sacrifices, but title made it
+                        worthwhile
+                      </h3>
+                    </div>
+                  </a>
+                </article>
+                <article>
+                  <a href="#" class="link-reset media__item text--hover">
+                    <div class="image-block video__item_img-block">
+                      <img
+                        class="media__img ibg"
+                        src="/images/fa5050c091146164f75386415c183987.webp"
+                      />
+                      <div class="play__icon_block">
+                        <svg
+                          class="play__icon"
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 330 330"
+                          xml:space="preserve"
+                          stroke-width="1"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              id="XMLID_497_"
+                              d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                            ></path>
+                          </g>
+                        </svg>
+                        <span>06:12</span>
+                      </div>
+                    </div>
+                    <div class="media__text_block flx-clmn">
+                      <p class="media__subtitle mb-reset">video</p>
+                      <h3 class="mb-reset video__item_title">
+                        Slot: My family made sacrifices, but title made it
+                        worthwhile
+                      </h3>
+                    </div>
+                  </a>
+                </article>
+                <article>
+                  <a href="#" class="link-reset media__item text--hover">
+                    <div class="image-block video__item_img-block">
+                      <img
+                        class="media__img ibg"
+                        src="/images/4c7f3f00bfa7bf700f188e604fb9185a.webp"
+                      />
+                      <div class="play__icon_block">
+                        <svg
+                          class="play__icon"
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 330 330"
+                          xml:space="preserve"
+                          stroke-width="1"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              id="XMLID_497_"
+                              d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                            ></path>
+                          </g>
+                        </svg>
+                        <span>09:42</span>
+                      </div>
+                    </div>
+                    <div class="media__text_block flx-clmn">
+                      <p class="media__subtitle mb-reset">video</p>
+                      <h3 class="mb-reset video__item_title">
+                        Aston Villa v Forest: Watch Martinez wonder save in
+                        reverse fixture
+                      </h3>
+                    </div>
+                  </a>
+                </article>
+              </div>
+              <div class="pagination">
+                <a href="#" class="pagination__item pagination__item--active"
+                  >1</a
+                >
+                <a href="#" class="pagination__item">2</a>
+                <a href="#" class="pagination__item">3</a>
+                <a href="#" class="pagination__item">4</a>
+                <a href="#" class="pagination__item">5</a>
+              </div>
             </div>
-            <div class="pag__section"><a href="#" class="link-reset pag__item pag__item--active">1</a><a href="#" class="link-reset pag__item">2</a><a href="#" class="link-reset pag__item">3</a><a href="#" class="link-reset pag__item">4</a><a href="#" class="link-reset pag__item">5</a></div>
           </div>
-        </div>
-      </div>
-      <div class="footer">
+        </section>
+      </main>
+      <footer class="footer">
         <div class="container">
-          <div class="footer__nav flx-btwn">
+          <div class="footer__nav">
             <div class="footer-nav__item">
               <div class="footer-nav__title_block">
                 <h3 class="title-26 mb-reset">premier league</h3>
               </div>
-              <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer-nav__link">home</a><a href="#" class="hover-text link-reset footer-nav__link">fixtures</a><a href="#" class="hover-text link-reset footer-nav__link">Results</a><a href="#" class="hover-text link-reset footer-nav__link">Tables</a><a href="#" class="hover-text link-reset footer-nav__link">Stats</a></div>
+              <div class="footer-nav__links flx-clmn">
+                <a href="#" class="footer-nav__link">home</a
+                ><a href="#" class="footer-nav__link">fixtures</a
+                ><a href="#" class="footer-nav__link">Results</a
+                ><a href="#" class="footer-nav__link">Tables</a
+                ><a href="#" class="footer-nav__link">Stats</a>
+              </div>
             </div>
             <div class="footer-nav__item">
               <div class="footer-nav__title_block">
                 <h3 class="title-26 mb-reset">Community</h3>
               </div>
-              <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer-nav__link">Wider Football</a><a href="#" class="hover-text link-reset footer-nav__link">PL Charitable Fund</a><a href="#" class="hover-text link-reset footer-nav__link">Community</a><a href="#" class="hover-text link-reset footer-nav__link">Youth Development</a><a href="#" class="hover-text link-reset footer-nav__link">No Room for Racism</a></div>
+              <div class="footer-nav__links flx-clmn">
+                <a href="#" class="footer-nav__link">Wider Football</a
+                ><a href="#" class="footer-nav__link">PL Charitable Fund</a
+                ><a href="#" class="footer-nav__link">Community</a
+                ><a href="#" class="footer-nav__link">Youth Development</a
+                ><a href="#" class="footer-nav__link">No Room for Racism</a>
+              </div>
             </div>
             <div class="footer-nav__item">
               <div class="footer-nav__title_block">
                 <h3 class="title-26 mb-reset">about</h3>
               </div>
-              <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer-nav__link">Overview</a><a href="#" class="hover-text link-reset footer-nav__link">What we do</a><a href="#" class="hover-text link-reset footer-nav__link">Governance</a><a href="#" class="hover-text link-reset footer-nav__link">Statement of Principles</a><a href="#" class="hover-text link-reset footer-nav__link">Inclusion</a></div>
+              <div class="footer-nav__links flx-clmn">
+                <a href="#" class="footer-nav__link">Overview</a
+                ><a href="#" class="footer-nav__link">What we do</a
+                ><a href="#" class="footer-nav__link">Governance</a
+                ><a href="#" class="footer-nav__link">Statement of Principles</a
+                ><a href="#" class="footer-nav__link">Inclusion</a>
+              </div>
             </div>
             <div class="footer-nav__item">
               <div class="footer-nav__title_block">
                 <h3 class="title-26 mb-reset">stats</h3>
               </div>
-              <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer-nav__link">Milestones</a><a href="#" class="hover-text link-reset footer-nav__link">All-time Stats</a><a href="#" class="hover-text link-reset footer-nav__link">Club Stats</a><a href="#" class="hover-text link-reset footer-nav__link">Player Stats</a><a href="#" class="hover-text link-reset footer-nav__link">Dashboard</a></div>
+              <div class="footer-nav__links flx-clmn">
+                <a href="#" class="footer-nav__link">Milestones</a
+                ><a href="#" class="footer-nav__link">All-time Stats</a
+                ><a href="#" class="footer-nav__link">Club Stats</a
+                ><a href="#" class="footer-nav__link">Player Stats</a
+                ><a href="#" class="footer-nav__link">Dashboard</a>
+              </div>
             </div>
             <div class="footer-nav__item">
               <div class="footer-nav__title_block">
                 <h3 class="title-26 mb-reset">more</h3>
               </div>
-              <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer-nav__link">History</a><a href="#" class="hover-text link-reset footer-nav__link">Hall of Fame</a><a href="#" class="hover-text link-reset footer-nav__link">PL30</a><a href="#" class="hover-text link-reset footer-nav__link">Referees</a><a href="#" class="hover-text link-reset footer-nav__link">Milestones</a></div>
+              <div class="footer-nav__links flx-clmn">
+                <a href="#" class="footer-nav__link">History</a
+                ><a href="#" class="footer-nav__link">Hall of Fame</a
+                ><a href="#" class="footer-nav__link">PL30</a
+                ><a href="#" class="footer-nav__link">Referees</a
+                ><a href="#" class="footer-nav__link">Milestones</a>
+              </div>
             </div>
           </div>
           <div class="footer__btm">
-            <p class="mb-reset">© 2025 – premier-league.pt. All Rights Reserved</p>
+            <p class="mb-reset">
+              © 2025 – premier-league.pt. All Rights Reserved
+            </p>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
+    <script type="module" src="/js/menuBurger.js"></script>
   </body>
-
 </html>

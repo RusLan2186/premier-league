@@ -1,3 +1,9 @@
+.clubs__rows {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
 .club__head {
   background: #37003c;
   border-radius: 10px 10px 0px 0px;
@@ -35,7 +41,7 @@
   padding-top: 3px;
   flex-basis: 22%;
   text-align: center;
-    line-height: 1;
+  line-height: 1;
 }
 
 .club__info {
@@ -49,4 +55,10 @@
   text-transform: capitalize;
   flex-basis: 32%;
   justify-content: center;
+}
+
+@media (max-width: 767.98px){
+  .club__head .logo-70{
+    height: 60px;
+  }
 }
