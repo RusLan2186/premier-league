@@ -118,13 +118,13 @@
   .res__content {
   }
   .res__item {
-position: absolute;
+    position: absolute;
     transform: translateY(-20px);
     transform-origin: top center;
     opacity: 0;
     pointer-events: none;
     overflow: hidden;
-    transition:  transform 0.4s, opacity 0.4s ease;
+    transition: transform 0.4s, opacity 0.4s ease;
   }
 
   .res__content.open-spoiler .res__item {
