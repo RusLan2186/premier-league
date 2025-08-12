@@ -5,7 +5,10 @@
 }
 
 .res__head {
-  background-image: url('../images/41b409eee00c491fb4e21eba4d62121a.jpg');
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(36, 196, 252);
   font-size: 17px;
   font-weight: 600;
   padding-bottom: 15px;
@@ -13,10 +16,20 @@
   padding-right: 20px;
   padding-top: 15px;
   background-size: cover;
-  border-radius: 15px 15px 0px 0px;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
+
+.res-head__info {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.res-head__icon img {
+  display: none;
+}
+
 .res__item {
   display: grid;
   align-items: center;
@@ -81,21 +94,17 @@
   .res__item {
     grid-template-columns: 20% 15% 20% auto;
   }
-
   .res__team_block {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
   }
-
   .res__team_block--reverse {
     flex-direction: column-reverse;
   }
-
   .win--right {
     right: 5px;
   }
-
   .res__link_block .link__btn {
     flex-shrink: 0;
   }
@@ -106,41 +115,67 @@
     grid-template-columns: 1fr;
   }
 
+  .res__content {
+  }
   .res__item {
+position: absolute;
+    transform: translateY(-20px);
+    transform-origin: top center;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+    transition:  transform 0.4s, opacity 0.4s ease;
+  }
+
+  .res__content.open-spoiler .res__item {
+    position: relative;
+    transform: translateY(0px);
+
+    opacity: 1;
+    pointer-events: auto;
+    display: grid;
     grid-template-columns: 25% 15% 25% auto;
   }
 
   .res__team_block {
     flex-direction: row;
   }
+
+  .res-head__icon img {
+    display: inline-block;
+    height: 25px;
+    transform: rotate(-90deg);
+    transition: 0.3s transform;
+  }
+
+  .res__content.open-spoiler .res-head__icon img {
+    transform: rotate(0deg);
+  }
 }
 
 @media (max-width: 699.98px) {
-  .res__item {
+  .res__content.open-spoiler .res__item {
     grid-template-columns: 20% 15% 20% auto;
   }
   .res__team_block {
     flex-direction: column;
   }
-
   .res__team_block--reverse {
     flex-direction: column-reverse;
   }
 }
 
 @media (max-width: 549.99px) {
-  .res__item {
+  .res__content.open-spoiler .res__item {
     grid-template-columns: repeat(3, 33%);
     row-gap: 10px;
     justify-content: center;
     justify-items: center;
   }
-
   .res__link_block {
     width: 100%;
     grid-column: 1/4;
   }
-
   .res__link_block .link__btn {
     width: 100%;
   }

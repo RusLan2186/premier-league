@@ -15,16 +15,16 @@
 }
 
 .match__date {
-  font-size: 15px;
+  font-size: 18px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .match__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .match__team_block {
   display: flex;
