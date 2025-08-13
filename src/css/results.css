@@ -116,25 +116,29 @@
   }
 
   .res__content {
+    height: 60px;
+    transition: height 0.8s;
   }
   .res__item {
-    position: absolute;
-    transform: translateY(-20px);
+    max-height: 0;
+  
     transform-origin: top center;
     opacity: 0;
     pointer-events: none;
     overflow: hidden;
-    transition: transform 0.4s, opacity 0.4s ease;
+    transition: max-height 0.8s, opacity 0.8s;
+  }
+
+  .res__content.open-spoiler {
+    height: auto;
   }
 
   .res__content.open-spoiler .res__item {
-    position: relative;
-    transform: translateY(0px);
-
     opacity: 1;
     pointer-events: auto;
     display: grid;
     grid-template-columns: 25% 15% 25% auto;
+    max-height: 100%;
   }
 
   .res__team_block {
