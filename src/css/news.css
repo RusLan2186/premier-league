@@ -73,6 +73,11 @@
   text-overflow: ellipsis;
 }
 
+.news__wrap {
+  column-gap: 20px;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 1199.98px) {
   .news-title--30 {
     font-size: 27px;

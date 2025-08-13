@@ -13,6 +13,7 @@
 @import 'post.css';
 @import 'history.css';
 @import 'club.css';
+@import 'player.css';
 @import 'aside.css';
 @import 'pagination.css';
 @import 'swiper.css';
@@ -345,34 +346,6 @@ html {
 .pb-40pcr {
   padding-bottom: 40%;
 }
-.news__wrap {
-  column-gap: 20px;
-  margin-bottom: 20px;
-}
-.pag__section {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  column-gap: 10px;
-  padding-top: 30px;
-}
-.pag__item {
-  background: #37003c;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-bottom: 2px;
-  padding-top: 2px;
-  transition: 0.3s all ease;
-}
-.pag__item:hover {
-  background: #ff2882;
-  transition: 0.3s all ease;
-}
-.pag__item--active {
-  background: #ff2882;
-}
 
 .review__section {
   padding-bottom: 50px;
@@ -487,86 +460,7 @@ html {
   column-gap: 30px;
   text-transform: capitalize;
 }
-.club-head__img {
-}
 
-
-.overview__block {
-  display: flex;
-  column-gap: 20px;
-  width: 100%;
-}
-.overview__item {
-  background: #37003c;
-  border-radius: 10px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  font-size: 16px;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-  align-items: center;
-  flex-basis: 22%;
-  text-transform: capitalize;
-}
-.overview__items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.params__block {
-  background: #37003c;
-  border-radius: 10px;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 15px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
-.params__title_block {
-  text-transform: capitalize;
-  margin-bottom: 25px;
-}
-.circle__wrap {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
-}
-.circle__block {
-  margin-top: 15px;
-  align-items: center;
-  display: flex;
-  border-style: solid;
-  border-width: 8px;
-  border-radius: 50%;
-  justify-content: center;
-  height: 120px;
-  width: 120px;
-  border-right-color: rgb(255, 40, 130);
-  border-bottom-color: rgb(255, 40, 130);
-}
-.params__item {
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(255, 255, 255);
-  border-right-width: 0;
-  border-bottom-width: 0;
-  border-left-width: 0;
-  font-size: 18px;
-  font-weight: 500;
-  color: rgb(255, 255, 255);
-  text-transform: capitalize;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-.grid-player-tbl {
-  display: grid;
-  grid-template-columns: 15% 30% repeat(8, 1fr);
-}
 
 @media (max-width: 767.98px) {
   .section {
