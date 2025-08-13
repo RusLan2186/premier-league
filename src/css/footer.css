@@ -53,7 +53,10 @@
   text-align: center;
 }
 
-@media (max-width: 449.98px) {
+@media (max-width: 767.98px) {
+  .footer {
+    padding-top: 30px;
+  }
   .footer__nav {
     justify-items: center;
   }
