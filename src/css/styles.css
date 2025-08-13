@@ -327,10 +327,7 @@ font-family: 'Times New Roman', serif;
   align-items: center;
   text-transform: uppercase;
 }
-.grid-pts-tbl {
-  display: grid;
-  grid-template-columns: 8% 25% repeat(8, 1fr);
-}
+
 .text-and-img__block {
   column-gap: 20px;
 }
