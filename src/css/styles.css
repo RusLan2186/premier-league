@@ -14,6 +14,7 @@
 @import 'history.css';
 @import 'club.css';
 @import 'player.css';
+@import 'review.css';
 @import 'aside.css';
 @import 'pagination.css';
 @import 'swiper.css';
@@ -49,7 +50,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 4px; 
+  width: 4px;
 }
 ::-webkit-scrollbar:horizontal {
   height: 3px;
@@ -347,104 +348,22 @@ html {
   padding-bottom: 40%;
 }
 
-.review__section {
-  padding-bottom: 50px;
-  padding-top: 50px;
-  background-image: url('../images/b815a60f63297db1b2c8fbb1cb12a93d.webp');
-  background-size: cover;
-  position: relative;
-}
-.review__content {
-  position: relative;
-  z-index: 10;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.review__head {
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  column-gap: 30px;
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-.review__body {
-  align-items: flex-start;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-.review__team_block {
-  align-items: flex-start;
-  display: flex;
-  flex-basis: 33%;
-  column-gap: 30px;
-}
 .title__link-36 {
   font-size: 36px;
   font-weight: 700;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
-.goals__block {
-  font-size: 20px;
-  font-weight: 500;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  row-gap: 7px;
-  margin-top: 10px;
-}
-.goals__item {
-  align-items: center;
-  display: flex;
-  justify-content: flex-end;
-  column-gap: 30px;
-}
+
 .logo-120 {
   height: 120px;
 }
-.review__score {
-  align-self: center;
-  display: flex;
-  flex-basis: 33%;
-  font-size: 70px;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  column-gap: 15px;
-  justify-content: center;
-}
-.review__live_block {
-  width: 55%;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .overlay {
   background-color: rgba(0, 0, 0, 0.67);
   backdrop-filter: blur(4px);
 }
 
-.review-stats__item {
-  font-size: 18px;
-  font-weight: 500;
-  padding-bottom: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  text-transform: uppercase;
-  background-color: rgb(255, 255, 255);
-  color: rgb(55, 0, 60);
-  border-style: solid;
-  border-width: thin;
-  border-color: rgb(36, 196, 252);
-  border-top-width: 0;
-  border-right-width: 0;
-  border-left-width: 0;
-}
 .text-white {
   color: rgb(255, 255, 255);
 }
@@ -460,7 +379,6 @@ html {
   column-gap: 30px;
   text-transform: capitalize;
 }
-
 
 @media (max-width: 767.98px) {
   .section {

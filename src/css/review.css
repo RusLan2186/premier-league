@@ -1,0 +1,282 @@
+.review__section {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-image: url('../images/b815a60f63297db1b2c8fbb1cb12a93d.webp');
+  background-size: cover;
+  position: relative;
+}
+.review__content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.review__head {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.review__body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.review__team_block {
+  display: flex;
+  align-items: flex-start;
+  flex-basis: 33%;
+  column-gap: 30px;
+}
+
+.review-head__logo {
+  height: 120px;
+}
+
+.review-head__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.goals__block {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  row-gap: 7px;
+  margin-top: 10px;
+}
+
+.goals__item {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 30px;
+}
+
+.review__score {
+  align-self: center;
+  display: flex;
+  flex-basis: 33%;
+  font-size: 70px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  column-gap: 15px;
+  justify-content: center;
+}
+
+.review__live_block {
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review-stats__item {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  text-transform: uppercase;
+  background-color: rgb(255, 255, 255);
+  color: rgb(55, 0, 60);
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(36, 196, 252);
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.post-review__rows {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  column-gap: 30px;
+}
+
+.aside-review__stats_section {
+  margin-bottom: 30px;
+}
+
+.aside-review-stats__logo {
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 1199.98px) {
+  .review-head__logo {
+    height: 90px;
+  }
+
+  .review-head__title {
+    font-size: 30px;
+  }
+
+  .review__score {
+    font-size: 60px;
+  }
+
+  .goals__block {
+    font-size: 18px;
+  }
+
+  .goals__item .logo--30 {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .review__body {
+    justify-content: space-between;
+  }
+
+  .review__team_block {
+    flex-basis: 40%;
+    column-gap: 20px;
+    justify-content: center;
+  }
+  .review-head__logo {
+    height: 70px;
+  }
+
+  .review-head__title {
+    font-size: 28px;
+  }
+
+  .review__score {
+    font-size: 50px;
+    flex-basis: 20%;
+  }
+
+  .goals__block {
+    font-size: 16px;
+  }
+
+  .goals__item .logo--30 {
+    height: 25px;
+    width: 25px;
+  }
+
+  .review__live_block {
+    width: 80%;
+  }
+
+  .post-review__rows {
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+    row-gap: 20px;
+  }
+
+  .aside-review__res_section {
+    display: none;
+  }
+
+  .aside-review__stats_section {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .review__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .review__team_block {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    flex-basis: auto;
+  }
+  .review__team_block--reverse {
+    flex-direction: column-reverse;
+  }
+
+  .review-team__info {
+    text-align: center;
+  }
+
+  .review-head__logo {
+    height: 60px;
+  }
+
+  .review-head__title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .review__score {
+    transform: translateY(15px);
+    align-self: flex-start;
+  }
+
+  .review__live_block {
+    width: 100%;
+  }
+}
+
+@media (max-width: 599.98px) {
+  .review__head {
+    font-size: 22px;
+  }
+  .review-head__logo {
+    height: 50px;
+  }
+
+  .review-head__title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .goals__block {
+    font-size: 14px;
+  }
+
+  .goals__item .logo--30 {
+    height: 20px;
+    width: 20px;
+  }
+
+  .review__score {
+    font-size: 37px;
+  }
+
+  .aside-review-stats__logo {
+    height: 35px;
+  }
+
+  .aside__stats_block .title-26 {
+    font-size: 22px;
+  }
+
+  .review-stats__item .title--22 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 499.99px) {
+  .goals__block {
+    font-size: 12px;
+  }
+  .goals__item {
+    column-gap: 15px;
+  }
+
+  .goals__item .logo--30 {
+    height: 15px;
+    width: 15px;
+  }
+}

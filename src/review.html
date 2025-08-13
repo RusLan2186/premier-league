@@ -1,132 +1,394 @@
 <!DOCTYPE html>
 <html lang="pt">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>review</title>
-    <meta name="description" content="This is a new page.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="This is a new page." />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
     <div class="body">
-      <div class="header mb-reset">
+      <header class="header mb-reset">
         <div class="container">
-          <div class="header__content flx-btwn"><a class="link-reset header__logo_link" href="https://premier-league.pt/"><img class="header__logo_img" src="/images/a8f2a93a34cda4bff38522176fe03bb9.jpg" /></a>
-            <div class="header__nav">
-              <ul class="header__nav_list reset">
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/post">post</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/video-post">video post</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/news">news</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/stats">stats</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/review">review</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/calendar">calendar</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/results">results</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/history">history</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/video">video</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/lives">lives</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/club">club</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/clubs">clubs</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/player">player</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/contact">contact</a></li>
+          <div class="header__content">
+            <a class="link-reset header__logo_link" href="./index.html"
+              ><img
+                class="header__logo_img"
+                src="/images/a8f2a93a34cda4bff38522176fe03bb9.jpg"
+            /></a>
+            <nav class="header__nav">
+              <ul class="header__nav_list">
+                <li>
+                  <a class="link-reset header__nav_link" href="./post.html"
+                    >post</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="./video-post.html"
+                    >video post</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./news.html"
+                    >news</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./stats.html"
+                    >stats</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./review.html"
+                    >review</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./calendar.html"
+                    >calendar</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./results.html"
+                    >results</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./history.html"
+                    >history</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./video.html"
+                    >video</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./lives.html"
+                    >lives</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./club.html"
+                    >club</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./clubs.html"
+                    >clubs</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./player.html"
+                    >player</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./contact.html"
+                    >contact</a
+                  >
+                </li>
               </ul>
-            </div>
+            </nav>
+            <button class="header__burger">
+              <span class="header__burger-line"></span>
+            </button>
           </div>
         </div>
-      </div>
-      <div class="main">
-        <div class="review__section mb-50">
+      </header>
+      <main class="main">
+        <section class="review__section section">
           <div class="container">
             <div class="review__content">
-              <div class="review__head"><span>24.04.2025</span><span>etihad stadium</span></div>
+              <div class="review__head">
+                <span>24.04.2025</span><span>etihad stadium</span>
+              </div>
               <div class="review__body">
-                <div class="review__team_block">
-                  <div class="review-team__info"><a href="#" class="link-reset title__link-36 hover-text">man city</a>
+                <div class="review__team_block review__team_block--reverse">
+                  <div class="review-team__info">
+                    <a href="#" class="review-head__title hover-text"
+                      >man city</a
+                    >
                     <div class="goals__block flx-clmn">
-                      <div class="goals__item"><span>32 - holland e.</span><img src="/images/d579cfc91677838f87c614d11ad4205b.png" class="logo--30" /></div>
-                      <div class="goals__item"><span>47 - davids r.</span><img src="/images/d579cfc91677838f87c614d11ad4205b.png" class="logo--30" /></div>
-                      <div class="goals__item"><span>64 - mitchel s.</span><img src="/images/d579cfc91677838f87c614d11ad4205b.png" class="logo--30" /></div>
-                      <div class="goals__item"><span>01 - maldini p.</span><img src="/images/3f5f53373f58413bdce8e8ff804b846e.png" class="logo--30" /></div>
-                      <div class="goals__item"><span>85 - puyol c.</span><img src="/images/3f5f53373f58413bdce8e8ff804b846e.png" class="logo--30" /></div>
+                      <div class="goals__item">
+                        <span>32 - holland</span
+                        ><img
+                          src="/images/d579cfc91677838f87c614d11ad4205b.png"
+                          class="logo--30"
+                        />
+                      </div>
+                      <div class="goals__item">
+                        <span>47 - davids</span
+                        ><img
+                          src="/images/d579cfc91677838f87c614d11ad4205b.png"
+                          class="logo--30"
+                        />
+                      </div>
+                      <div class="goals__item">
+                        <span>64 - mitchel</span
+                        ><img
+                          src="/images/d579cfc91677838f87c614d11ad4205b.png"
+                          class="logo--30"
+                        />
+                      </div>
+                      <div class="goals__item">
+                        <span>01 - maldini</span
+                        ><img
+                          src="/images/3f5f53373f58413bdce8e8ff804b846e.png"
+                          class="logo--30"
+                        />
+                      </div>
+                      <div class="goals__item">
+                        <span>85 - puyol</span
+                        ><img
+                          src="/images/3f5f53373f58413bdce8e8ff804b846e.png"
+                          class="logo--30"
+                        />
+                      </div>
                     </div>
-                  </div><img src="/images/0ab23b908a4c1e72fa3d64d5825ebb75.png" class="logo-120" />
+                  </div>
+                  <img src="/images/man-city.png" class="review-head__logo" />
                 </div>
-                <div class="review__score"><span class="text-green">3</span><span>-</span><span>2</span></div>
-                <div class="review__team_block"><img src="/images/78ba41add1f464050ac6c355cc9ecc2a.png" class="logo-120" />
-                  <div class="review-team__info"><a href="#" class="link-reset title__link-36 hover-text">arsenal</a>
+                <div class="review__score">
+                  <span class="text-green">3</span><span>-</span><span>2</span>
+                </div>
+                <div class="review__team_block">
+                  <img src="/images/arsenal.png" class="review-head__logo" />
+                  <div class="review-team__info">
+                    <a href="#" class="review-head__title hover-text"
+                      >arsenal</a
+                    >
                     <div class="goals__block flx-clmn">
-                      <div class="goals__item"><span>14 - rudiger a.</span><img src="/images/d579cfc91677838f87c614d11ad4205b.png" class="logo--30" /></div>
-                      <div class="goals__item"><span>91 - zeedeorf c.</span><img src="/images/d579cfc91677838f87c614d11ad4205b.png" class="logo--30" /></div>
-                      <div class="goals__item"><span>29 - zinchen a.</span><img src="/images/3f5f53373f58413bdce8e8ff804b846e.png" class="logo--30" /></div>
-                      <div class="goals__item"><span>54 - pique g.</span><img src="/images/3f5f53373f58413bdce8e8ff804b846e.png" class="logo--30" /></div>
-                      <div class="goals__item"><span>81 - carlos r.</span><img src="/images/59b8136d8b777c72f92bd70941bd9f70.png" class="logo--30" /></div>
+                      <div class="goals__item">
+                        <span>14 - rudiger</span
+                        ><img
+                          src="/images/d579cfc91677838f87c614d11ad4205b.png"
+                          class="logo--30"
+                        />
+                      </div>
+                      <div class="goals__item">
+                        <span>91 - zeedeorf</span
+                        ><img
+                          src="/images/d579cfc91677838f87c614d11ad4205b.png"
+                          class="logo--30"
+                        />
+                      </div>
+                      <div class="goals__item">
+                        <span>29 - zinchen</span
+                        ><img
+                          src="/images/3f5f53373f58413bdce8e8ff804b846e.png"
+                          class="logo--30"
+                        />
+                      </div>
+                      <div class="goals__item">
+                        <span>54 - pique</span
+                        ><img
+                          src="/images/3f5f53373f58413bdce8e8ff804b846e.png"
+                          class="logo--30"
+                        />
+                      </div>
+                      <div class="goals__item">
+                        <span>81 - carlos</span
+                        ><img
+                          src="/images/59b8136d8b777c72f92bd70941bd9f70.png"
+                          class="logo--30"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="review__live_block">
-                <div class="live__block"><a href="#" class="link-reset media__item text--hover">
-                    <div class="image-block h-100pcr"><img class="media__img ibg" src="/images/4c7f3f00bfa7bf700f188e604fb9185a.webp" />
-                      <div class="play__icon_block text--hover"><img class="play__icon" src="/images/536a3d967c67001edd112a308d3fa6f7.png" /><span>03:15</span></div>
+                <article class="live__block">
+                  <a href="#" class="link-reset media__item text--hover">
+                    <div class="image-block h-100pcr">
+                      <img
+                        class="media__img ibg"
+                        src="/images/4c7f3f00bfa7bf700f188e604fb9185a.webp"
+                      />
+                      <div class="play__icon_block">
+                        <svg
+                          class="play__icon"
+                          version="1.1"
+                          id="Layer_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 330 330"
+                          xml:space="preserve"
+                          stroke-width="1"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              id="XMLID_497_"
+                              d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                            ></path>
+                          </g>
+                        </svg>
+                        <span>09:42</span>
+                      </div>
                     </div>
                   </a>
                   <div class="live__info">
-                    <div class="live__head flx-btwn"><span>saturday 24, april</span><span>15:00</span></div>
-                    <div class="live__body flx-btwn"><a href="#" class="hover-text link-reset live__team_block flx-clmn"><img class="logo-50" src="/images/0ab23b908a4c1e72fa3d64d5825ebb75.png" />
-                        <p> m. city</p>
+                    <div class="live__head flx-btwn">
+                      <span>saturday 02, may</span><span>15:00</span>
+                    </div>
+                    <div class="live__body flx-btwn">
+                      <a
+                        href="#"
+                        class="hover-text link-reset live__team_block flx-clmn"
+                        ><img class="logo-50" src="/images/man-city.png" />
+                        <p>m. city</p>
                       </a>
-                      <p class="mb-50 title--30 mb-reset">VS</p><a href="#" class="hover-text link-reset live__team_block flx-clmn"><img class="logo-50" src="/images/78ba41add1f464050ac6c355cc9ecc2a.png" />
+                      <p class="live__score mb-reset">VS</p>
+                      <a
+                        href="#"
+                        class="hover-text link-reset live__team_block flx-clmn"
+                        ><img class="logo-50" src="/images/arsenal.png" />
                         <p>arsenal</p>
                       </a>
                     </div>
-                    <div class="link__block"><a href="#" class="link-reset link__btn">watch match</a></div>
+                    <div class="link__block">
+                      <a href="#" class="link-reset link__btn">watch match</a>
+                    </div>
                   </div>
-                </div>
+                </article>
               </div>
             </div>
           </div>
           <div class="overlay ibg"></div>
-        </div>
-        <div class="post__section mb-50">
+        </section>
+        <section class="post__section post-review section">
           <div class="container">
-            <div class="title__block"><img src="/images/58fddc8e0951782199d971229c9a0382.png" class="logo-70" />
-              <h2 class="title mb-reset">Clash of the Titans at the Etihad! </h2>
+            <div class="title__block">
+              <img
+                src="/images/58fddc8e0951782199d971229c9a0382.png"
+                class="title__block_logo"
+              />
+              <h2 class="title mb-reset">Clash of the Titans at the Etihad!</h2>
             </div>
-            <div class="post__rows grid-cols-69pcr-1fr">
+            <div class="post-review__rows">
               <div class="post__content flx-clmn">
-                <div class="image-block pb-50pcr"><img class="media__img ibg" src="/images/c30e105c73b389e4e92855d6cfca52b5.webp" /></div>
+                <div class="image-block post__img_block">
+                  <img
+                    class="media__img ibg"
+                    src="/images/c30e105c73b389e4e92855d6cfca52b5.webp"
+                  />
+                </div>
                 <div class="post__text_block">
-                  <p>The stage is set for one of the most anticipated fixtures of the Premier League season as Manchester City welcomes Arsenal to the Etihad Stadium. This is more than just a match – it is a clash of ideologies, styles, and title ambitions.
-
-                    Pep Guardiolas City, a well-oiled machine built on control, precision, and relentless pressure, face off against Mikel Artetas evolving Arsenal – a side that mirrors Citys structure but brings its own youthful intensity and hunger. With both teams neck-and-neck in the title race, this match could define the final stretch of the season.</p>
-                  <p>City will look to dominate possession, suffocate transitions, and rely on the brilliance of players like Kevin De Bruyne, Phil Foden, and Erling Haaland. Arsenal, on the other hand, will count on the discipline of their backline, the creativity of Ødegaard, and the pace of Saka and Martinelli to exploit any gaps.
-
-                    There’s more than just points at stake – there’s pride, revenge, and momentum. Arsenal will remember their collapse at the Etihad last season, and City know that every slip can open the door for their rivals.
-
-                    Who will rise? Who will crack under pressure? The answers will unfold under the lights of the Etihad.</p>
-                  <p class="mb-reset">Manchester City, led by the ever-demanding Pep Guardiola, have turned dominance into an art form. Their possession-based football, tactical fluidity, and mental resilience have made them the team to beat for years. They enter this match knowing what it takes to cross the finish line first – and more importantly, knowing how to raise their level when the pressure is highest. Erling Haaland’s goal-scoring power,</p>
+                  <p>
+                    The stage is set for one of the most anticipated fixtures of
+                    the Premier League season as Manchester City welcomes
+                    Arsenal to the Etihad Stadium. This is more than just a
+                    match – it is a clash of ideologies, styles, and title
+                    ambitions. Pep Guardiolas City, a well-oiled machine built
+                    on control, precision, and relentless pressure, face off
+                    against Mikel Artetas evolving Arsenal – a side that mirrors
+                    Citys structure but brings its own youthful intensity and
+                    hunger. With both teams neck-and-neck in the title race,
+                    this match could define the final stretch of the season.
+                  </p>
+                  <p>
+                    City will look to dominate possession, suffocate
+                    transitions, and rely on the brilliance of players like
+                    Kevin De Bruyne, Phil Foden, and Erling Haaland. Arsenal, on
+                    the other hand, will count on the discipline of their
+                    backline, the creativity of Ødegaard, and the pace of Saka
+                    and Martinelli to exploit any gaps. There’s more than just
+                    points at stake – there’s pride, revenge, and momentum.
+                    Arsenal will remember their collapse at the Etihad last
+                    season, and City know that every slip can open the door for
+                    their rivals. Who will rise? Who will crack under pressure?
+                    The answers will unfold under the lights of the Etihad.
+                  </p>
+                  <p class="mb-reset">
+                    Manchester City, led by the ever-demanding Pep Guardiola,
+                    have turned dominance into an art form. Their
+                    possession-based football, tactical fluidity, and mental
+                    resilience have made them the team to beat for years. They
+                    enter this match knowing what it takes to cross the finish
+                    line first – and more importantly, knowing how to raise
+                    their level when the pressure is highest. Erling Haaland’s
+                    goal-scoring power,
+                  </p>
                 </div>
               </div>
-              <div class="aside">
-                <div class="aside__stats_section">
+              <aside class="aside aside-review">
+                <div class="aside-review__stats_section">
                   <div class="aside__stats_block">
-                    <div class="flx-btwn table__head"><img class="logo-50" src="/images/0ab23b908a4c1e72fa3d64d5825ebb75.png" /><span class="title-26 text-white">VS</span><img class="logo-50" src="/images/78ba41add1f464050ac6c355cc9ecc2a.png" /></div>
-                    <div class="flx-btwn review-stats__item"><span class="text-green title--22">15</span><span>shots</span><span class="text-red title--22">8</span></div>
-                    <div class="flx-btwn review-stats__item"><span class="text-green title--22">9</span><span>shots on target</span><span class="text-red title--22">6</span></div>
-                    <div class="flx-btwn review-stats__item"><span class="text-green title--22">60</span><span>Possession %</span><span class="text-red title--22">40</span></div>
-                    <div class="flx-btwn review-stats__item"><span class="title--22 text-red">256</span><span>passes</span><span class="title--22 text-green">342</span></div>
-                    <div class="flx-btwn review-stats__item"><span class="text-green title--22">92</span><span>passing accuracy %</span><span class="text-red title--22">89</span></div>
-                    <div class="flx-btwn review-stats__item"><span class="title--22 text-red">25</span><span>Fouls</span><span class="title--22 text-green">19</span></div>
-                    <div class="flx-btwn review-stats__item"><span class="text-green title--22">8</span><span>Corners</span><span class="text-red title--22">7</span></div>
-                    <div class="flx-btwn review-stats__item"><span class="title--22 text-red">5</span><span>offsides</span><span class="title--22 text-green">3</span></div>
-                    <div class="flx-btwn review-stats__item"><span class="text-green title--22">4</span><span>Yellow Cards</span><span class="text-red title--22">6</span></div>
-                    <div class="flx-btwn review-stats__item"><span class="text-green title--22">0</span><span>red Cards</span><span class="text-red title--22">1</span></div>
+                    <div class="flx-btwn table__head">
+                      <img
+                        class="aside-review-stats__logo"
+                        src="/images/man-city.png"
+                      /><span class="title-26 text-white">VS</span
+                      ><img
+                        class="aside-review-stats__logo"
+                        src="/images/arsenal.png"
+                      />
+                    </div>
+                    <div class="flx-btwn review-stats__item">
+                      <span class="text-green title--22">15</span
+                      ><span>shots</span
+                      ><span class="text-red title--22">8</span>
+                    </div>
+                    <div class="flx-btwn review-stats__item">
+                      <span class="text-green title--22">9</span
+                      ><span>shots on target</span
+                      ><span class="text-red title--22">6</span>
+                    </div>
+                    <div class="flx-btwn review-stats__item">
+                      <span class="text-green title--22">60</span
+                      ><span>Possession %</span
+                      ><span class="text-red title--22">40</span>
+                    </div>
+                    <div class="flx-btwn review-stats__item">
+                      <span class="title--22 text-red">256</span
+                      ><span>passes</span
+                      ><span class="title--22 text-green">342</span>
+                    </div>
+                    <div class="flx-btwn review-stats__item">
+                      <span class="text-green title--22">92</span
+                      ><span>passing accuracy %</span
+                      ><span class="text-red title--22">89</span>
+                    </div>
+                    <div class="flx-btwn review-stats__item">
+                      <span class="title--22 text-red">25</span
+                      ><span>Fouls</span
+                      ><span class="title--22 text-green">19</span>
+                    </div>
+                    <div class="flx-btwn review-stats__item">
+                      <span class="text-green title--22">8</span
+                      ><span>Corners</span
+                      ><span class="text-red title--22">7</span>
+                    </div>
+                    <div class="flx-btwn review-stats__item">
+                      <span class="title--22 text-red">5</span
+                      ><span>offsides</span
+                      ><span class="title--22 text-green">3</span>
+                    </div>
+                    <div class="flx-btwn review-stats__item">
+                      <span class="text-green title--22">4</span
+                      ><span>Yellow Cards</span
+                      ><span class="text-red title--22">6</span>
+                    </div>
+                    <div class="flx-btwn review-stats__item">
+                      <span class="text-green title--22">0</span
+                      ><span>red Cards</span
+                      ><span class="text-red title--22">1</span>
+                    </div>
                   </div>
                 </div>
-                <div class="aside__res_section pos-sticky">
+                <div class="aside-review__res_section pos-sticky">
                   <div class="aside__res_wrap">
                     <div class="aside__res_head">
                       <p class="mb-reset">matchweek 34</p>
@@ -137,66 +399,138 @@
                           <p class="mb-reset">saturday 26, april</p>
                         </div>
                         <div class="match__block">
-                          <div class="match__body flx-btwn"><a href="#" class="link-reset text--hover match__team_block"><span>che</span><img class="logo--30" src="/images/0ab23b908a4c1e72fa3d64d5825ebb75.png" /></a>
-                            <div class="match__score"><span>1 - 0</span></div><a href="#" class="link-reset text--hover match__team_block"><img class="logo--30" src="/images/572cef089f2866c8f796e3221c94682f.png" /><span>bre</span></a>
+                          <div class="match__body flx-btwn">
+                            <a
+                              href="#"
+                              class="link-reset text--hover match__team_block"
+                              ><span>che</span
+                              ><img
+                                class="logo--30"
+                                src="/images/chelsea.png"
+                            /></a>
+                            <div class="match__score"><span>1 - 0</span></div>
+                            <a
+                              href="#"
+                              class="link-reset text--hover match__team_block"
+                              ><img
+                                class="logo--30"
+                                src="/images/brentford.png"
+                              /><span>bre</span></a
+                            >
                           </div>
-                          <div class="link__block"><a href="#" class="link-reset link__btn">match center</a></div>
+                          <div class="link__block">
+                            <a href="#" class="link-reset link__btn"
+                              >match center</a
+                            >
+                          </div>
                         </div>
                         <div class="match__block">
-                          <div class="match__body flx-btwn"><a href="#" class="link-reset text--hover match__team_block"><span>liv</span><img class="logo--30" src="/images/59cff6fb7f43b02a67d29f24196673d6.png" /></a>
-                            <div class="match__score"><span>3 - 1</span></div><a href="#" class="link-reset text--hover match__team_block"><img class="logo--30" src="/images/50afa9beb13e8d213a97fea2e0dfe5ba.png" /><span>new</span></a>
+                          <div class="match__body flx-btwn">
+                            <a
+                              href="#"
+                              class="link-reset text--hover match__team_block"
+                              ><span>liv</span
+                              ><img
+                                class="logo--30"
+                                src="/images/liver.png"
+                            /></a>
+                            <div class="match__score"><span>3 - 1</span></div>
+                            <a
+                              href="#"
+                              class="link-reset text--hover match__team_block"
+                              ><img
+                                class="logo--30"
+                                src="/images/newcastle.png"
+                              /><span>new</span></a
+                            >
                           </div>
-                          <div class="link__block"><a href="#" class="link-reset link__btn">match center</a></div>
+                          <div class="link__block">
+                            <a href="#" class="link-reset link__btn"
+                              >match center</a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </asi>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="footer">
+        </section>
+      </main>
+      <footer class="footer">
         <div class="container">
-          <div class="footer__nav flx-btwn">
+          <div class="footer__nav">
             <div class="footer-nav__item">
               <div class="footer-nav__title_block">
                 <h3 class="title-26 mb-reset">premier league</h3>
               </div>
-              <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer-nav__link">home</a><a href="#" class="hover-text link-reset footer-nav__link">fixtures</a><a href="#" class="hover-text link-reset footer-nav__link">Results</a><a href="#" class="hover-text link-reset footer-nav__link">Tables</a><a href="#" class="hover-text link-reset footer-nav__link">Stats</a></div>
+              <div class="footer-nav__links flx-clmn">
+                <a href="#" class="footer-nav__link">home</a
+                ><a href="#" class="footer-nav__link">fixtures</a
+                ><a href="#" class="footer-nav__link">Results</a
+                ><a href="#" class="footer-nav__link">Tables</a
+                ><a href="#" class="footer-nav__link">Stats</a>
+              </div>
             </div>
             <div class="footer-nav__item">
               <div class="footer-nav__title_block">
                 <h3 class="title-26 mb-reset">Community</h3>
               </div>
-              <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer-nav__link">Wider Football</a><a href="#" class="hover-text link-reset footer-nav__link">PL Charitable Fund</a><a href="#" class="hover-text link-reset footer-nav__link">Community</a><a href="#" class="hover-text link-reset footer-nav__link">Youth Development</a><a href="#" class="hover-text link-reset footer-nav__link">No Room for Racism</a></div>
+              <div class="footer-nav__links flx-clmn">
+                <a href="#" class="footer-nav__link">Wider Football</a
+                ><a href="#" class="footer-nav__link">PL Charitable Fund</a
+                ><a href="#" class="footer-nav__link">Community</a
+                ><a href="#" class="footer-nav__link">Youth Development</a
+                ><a href="#" class="footer-nav__link">No Room for Racism</a>
+              </div>
             </div>
             <div class="footer-nav__item">
               <div class="footer-nav__title_block">
                 <h3 class="title-26 mb-reset">about</h3>
               </div>
-              <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer-nav__link">Overview</a><a href="#" class="hover-text link-reset footer-nav__link">What we do</a><a href="#" class="hover-text link-reset footer-nav__link">Governance</a><a href="#" class="hover-text link-reset footer-nav__link">Statement of Principles</a><a href="#" class="hover-text link-reset footer-nav__link">Inclusion</a></div>
+              <div class="footer-nav__links flx-clmn">
+                <a href="#" class="footer-nav__link">Overview</a
+                ><a href="#" class="footer-nav__link">What we do</a
+                ><a href="#" class="footer-nav__link">Governance</a
+                ><a href="#" class="footer-nav__link">Statement of Principles</a
+                ><a href="#" class="footer-nav__link">Inclusion</a>
+              </div>
             </div>
             <div class="footer-nav__item">
               <div class="footer-nav__title_block">
                 <h3 class="title-26 mb-reset">stats</h3>
               </div>
-              <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer-nav__link">Milestones</a><a href="#" class="hover-text link-reset footer-nav__link">All-time Stats</a><a href="#" class="hover-text link-reset footer-nav__link">Club Stats</a><a href="#" class="hover-text link-reset footer-nav__link">Player Stats</a><a href="#" class="hover-text link-reset footer-nav__link">Dashboard</a></div>
+              <div class="footer-nav__links flx-clmn">
+                <a href="#" class="footer-nav__link">Milestones</a
+                ><a href="#" class="footer-nav__link">All-time Stats</a
+                ><a href="#" class="footer-nav__link">Club Stats</a
+                ><a href="#" class="footer-nav__link">Player Stats</a
+                ><a href="#" class="footer-nav__link">Dashboard</a>
+              </div>
             </div>
             <div class="footer-nav__item">
               <div class="footer-nav__title_block">
                 <h3 class="title-26 mb-reset">more</h3>
               </div>
-              <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer-nav__link">History</a><a href="#" class="hover-text link-reset footer-nav__link">Hall of Fame</a><a href="#" class="hover-text link-reset footer-nav__link">PL30</a><a href="#" class="hover-text link-reset footer-nav__link">Referees</a><a href="#" class="hover-text link-reset footer-nav__link">Milestones</a></div>
+              <div class="footer-nav__links flx-clmn">
+                <a href="#" class="footer-nav__link">History</a
+                ><a href="#" class="footer-nav__link">Hall of Fame</a
+                ><a href="#" class="footer-nav__link">PL30</a
+                ><a href="#" class="footer-nav__link">Referees</a
+                ><a href="#" class="footer-nav__link">Milestones</a>
+              </div>
             </div>
           </div>
           <div class="footer__btm">
-            <p class="mb-reset">© 2025 – premier-league.pt. All Rights Reserved</p>
+            <p class="mb-reset">
+              © 2025 – premier-league.pt. All Rights Reserved
+            </p>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
+    <script type="module" src="/js/menuBurger.js"></script>
   </body>
-
 </html>
