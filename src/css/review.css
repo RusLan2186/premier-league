@@ -226,6 +226,18 @@
   .review__live_block {
     width: 100%;
   }
+
+  .aside-review-stats__logo {
+    height: 35px;
+  }
+
+  .aside__stats_block .title-26 {
+    font-size: 22px;
+  }
+
+  .review-stats__item .title--22 {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 599.98px) {
@@ -252,18 +264,6 @@
 
   .review__score {
     font-size: 37px;
-  }
-
-  .aside-review-stats__logo {
-    height: 35px;
-  }
-
-  .aside__stats_block .title-26 {
-    font-size: 22px;
-  }
-
-  .review-stats__item .title--22 {
-    font-size: 20px;
   }
 }
 

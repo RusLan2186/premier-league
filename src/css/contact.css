@@ -22,15 +22,21 @@
   height: 50px;
 }
 
+.contact__link{
+  font-size: 20px;
+  color:#37003C; 
+  font-weight: 500px;
+}
+
 @media (max-width: 767.98px) {
   .contact__content {
     row-gap: 20px;
   }
 
   .contact__icon {
-    height: 40px;
+    height: 35px;
   }
   .contact__title {
-    font-size: 25px;
+    font-size: 22px;
   }
 }

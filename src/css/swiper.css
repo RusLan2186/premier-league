@@ -1,5 +1,5 @@
 .swiper-wrapper {
-  padding-top: 3.1rem; 
+  padding-top: 3.1rem;
   display: flex;
   align-items: stretch;
   height: 100%;
@@ -52,7 +52,7 @@
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 1.25rem !important; /* 20px */
-  color: #24c4fc ;
+  color: #24c4fc;
   font-weight: 700;
   transition: 0.3s color;
   position: relative;
@@ -85,10 +85,11 @@
 .swiper-pagination-bullet-active {
   width: 0.75rem; /* 12px */
   height: 0.75rem; /* 12px */
+  transition: background-color 0.3s ;
 }
 
 .swiper__pagination span.swiper-pagination-bullet-active {
-  background-color: #24c4fc ;
+  background-color: #24c4fc;
 }
 
 @media (min-width: 1099.98px) {
