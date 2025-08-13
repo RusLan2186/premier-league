@@ -12,17 +12,17 @@
 @import 'contact.css';
 @import 'post.css';
 @import 'history.css';
+@import 'club.css';
 @import 'aside.css';
 @import 'pagination.css';
 @import 'swiper.css';
-
 
 html {
   font-size: 16px;
 }
 
 .body {
-font-family: 'Times New Roman', serif;
+  font-family: 'Times New Roman', serif;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -45,6 +45,22 @@ font-family: 'Times New Roman', serif;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+::-webkit-scrollbar {
+  width: 4px; 
+}
+::-webkit-scrollbar:horizontal {
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #24c4fc;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
 }
 
 .flx-btwn {
@@ -82,13 +98,10 @@ font-family: 'Times New Roman', serif;
   margin-bottom: 50px;
 }
 
-
-
 .grid-cols-69pcr-1fr {
   display: grid;
   grid-template-columns: 69% 1fr;
 }
-
 
 .pb-60pcr {
   padding-bottom: 60%;
@@ -128,7 +141,6 @@ font-family: 'Times New Roman', serif;
 }
 .hover-text {
   transition: 0.3s all ease;
-  color: rgb(0, 0, 0);
 }
 .hover-text:hover {
   color: rgb(255, 40, 130);
@@ -184,7 +196,7 @@ font-family: 'Times New Roman', serif;
   background: #24c4fc;
 }
 
-.link__btn--sm{
+.link__btn--sm {
   font-size: 15px;
 }
 
@@ -210,7 +222,6 @@ font-family: 'Times New Roman', serif;
   color: rgb(255, 255, 255);
   text-transform: capitalize;
 }
-
 
 .link__btn--big {
   font-size: 18px;
@@ -281,7 +292,6 @@ font-family: 'Times New Roman', serif;
   padding-top: 5px;
   height: 50px;
 }
-
 
 .cal__month {
   align-items: center;
@@ -363,7 +373,6 @@ font-family: 'Times New Roman', serif;
 .pag__item--active {
   background: #ff2882;
 }
-
 
 .review__section {
   padding-bottom: 50px;
@@ -466,23 +475,7 @@ font-family: 'Times New Roman', serif;
 .text-white {
   color: rgb(255, 255, 255);
 }
-.club__head_section {
-  background-image: url('../images/fa826f3006a8dffa813a9d96d6e42105.jpg');
-  background-size: cover;
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-.club-head__content {
-  align-items: stretch;
-}
-.club-head__info {
-  align-items: center;
-  display: flex;
-  column-gap: 20px;
-}
-.club-head__text_block {
-  color: rgb(255, 255, 255);
-}
+
 .title-60 {
   font-size: 60px;
   font-weight: 700;
@@ -496,63 +489,8 @@ font-family: 'Times New Roman', serif;
 }
 .club-head__img {
 }
-.club-head__img_block {
-  width: 35%;
-  position: relative;
-  padding-bottom: 20%;
-}
-.manager__card {
-  background: #37003c;
-  border-radius: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  align-items: center;
-  display: flex;
-  column-gap: 20px;
-}
-.manager__photo_block {
-  align-self: flex-end;
-}
-.manager__photo {
-  width: 100%;
-}
-.manager__info {
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-  text-transform: capitalize;
-}
-.manager__name {
-  font-size: 22px;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-}
-.cup__item {
-  row-gap: 10px;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 600;
-}
-.cup__img {
-  height: 200px;
-}
-.player__photo_block {
-  height: 100%;
-}
-.player__info {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 20px;
-}
-.player__title_block {
-  font-size: 26px;
-  font-weight: 700;
-  text-transform: capitalize;
-  margin-bottom: 30px;
-}
+
+
 .overview__block {
   display: flex;
   column-gap: 20px;

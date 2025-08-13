@@ -1,111 +1,255 @@
 <!DOCTYPE html>
 <html lang="pt">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>club</title>
-    <meta name="description" content="This is a new page.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="This is a new page." />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
     <div class="body">
-      <div class="header mb-reset">
+      <header class="header mb-reset">
         <div class="container">
-          <div class="header__content flx-btwn"><a class="link-reset header__logo_link" href="https://premier-league.pt/"><img class="header__logo_img" src="/images/a8f2a93a34cda4bff38522176fe03bb9.jpg" /></a>
-            <div class="header__nav">
-              <ul class="header__nav_list reset">
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/post">post</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/video-post">video post</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/news">news</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/stats">stats</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/review">review</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/calendar">calendar</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/results">results</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/history">history</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/video">video</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/lives">lives</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/club">club</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/clubs">clubs</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/player">player</a></li>
-                <li><a class="link-reset header__nav_link" href="https://premier-league.pt/contact">contact</a></li>
+          <div class="header__content">
+            <a class="link-reset header__logo_link" href="./index.html"
+              ><img
+                class="header__logo_img"
+                src="/images/a8f2a93a34cda4bff38522176fe03bb9.jpg"
+            /></a>
+            <nav class="header__nav">
+              <ul class="header__nav_list">
+                <li>
+                  <a class="link-reset header__nav_link" href="./post.html"
+                    >post</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="./video-post.html"
+                    >video post</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./news.html"
+                    >news</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./stats.html"
+                    >stats</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./review.html"
+                    >review</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./calendar.html"
+                    >calendar</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./results.html"
+                    >results</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./history.html"
+                    >history</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./video.html"
+                    >video</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./lives.html"
+                    >lives</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./club.html"
+                    >club</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./clubs.html"
+                    >clubs</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./player.html"
+                    >player</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="./contact.html"
+                    >contact</a
+                  >
+                </li>
               </ul>
-            </div>
+            </nav>
+            <button class="header__burger">
+              <span class="header__burger-line"></span>
+            </button>
           </div>
         </div>
-      </div>
-      <div class="main">
-        <div class="club__head_section mb-50">
+      </header>
+      <main class="main">
+        <section class="club__head_section section">
           <div class="container">
             <div class="club-head__content flx-btwn">
-              <div class="club-head__info"><img src="/images/b7c655f0c5acfc2fac4514ccca4505f0.png" class="logo-120" />
+              <div class="club-head__info">
+                <img src="/images/everton.png" class="club-head_logo" />
                 <div class="club-head__text_block">
-                  <h1 class="title-60 mb-reset">everton</h1>
-                  <div class="club-head__data"><span>est:1878</span><span>Goodison Park, Liverpool</span></div>
+                  <h1 class="club-head__title">everton</h1>
+                  <div class="club-head__data">
+                    <span>est:1878</span><span>Goodison Park, Liverpool</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="history__section mb-50">
+        </section>
+        <section class="history__section section">
           <div class="container">
-            <div class="title__block"><img src="/images/58fddc8e0951782199d971229c9a0382.png" class="logo-70" />
+            <div class="title__block">
+              <img
+                src="/images/58fddc8e0951782199d971229c9a0382.png"
+                class="title__block_logo"
+              />
               <h2 class="title mb-reset">about club</h2>
             </div>
-            <div class="text-and-img__block grid-cols-2">
-              <div class="h-100pcr image-block"><img class="ibg" src="/images/c593e8860e4af58f4288e98073fe22a5.jpg" /></div>
+            <div class="history__rows">
+              <div class="history__img_block image-block">
+                <img
+                  class="ibg"
+                  src="/images/c593e8860e4af58f4288e98073fe22a5.jpg"
+                />
+              </div>
               <div class="post__text_block">
-                <p>Founded in 1878, Everton Football Club is one of England’s most historic and cherished football institutions. Nicknamed The Toffees, Everton has woven its name deep into the fabric of English football, boasting a rich heritage, passionate fanbase, and a tradition of resilience that has carried the club through highs and lows over nearly a century and a half.
-
-                  Based at the iconic Goodison Park — affectionately known as The Grand Old Lady — Everton has been a cornerstone of the city of Liverpool, not just in footballing terms, but as a symbol of working-class pride, loyalty, and identity. The blue half of Merseyside lives and breathes Everton, with generation after generation of fans passing down the club’s values of heart, hard work, and unwavering support.</p>
-                <p class="mb-reset">Everton trophy cabinet reflects its glorious past: nine First Division (now Premier League) titles, five FA Cups, and a European Cup Winners’ Cup. Legendary players like Dixie Dean — who scored a record 60 goals in a single league season — as well as Alan Ball, Neville Southall, and more recently Tim Cahill and Leighton Baines, have left indelible marks on the club&#039;s proud history.
-
-                  Despite recent challenges and a battle to reclaim consistent top-flight form, Everton’s ambition remains clear. With a passionate fanbase behind them, a promising youth academy, and a new stadium on the horizon at Bramley-Moore Dock, the club is gearing up for a new era — one that respects the past but looks boldly toward the future.</p>
+                <p>
+                  Founded in 1878, Everton Football Club is one of England’s
+                  most historic and cherished football institutions. Nicknamed
+                  The Toffees, Everton has woven its name deep into the fabric
+                  of English football, boasting a rich heritage, passionate
+                  fanbase, and a tradition of resilience that has carried the
+                  club through highs and lows over nearly a century and a half.
+                  Based at the iconic Goodison Park — affectionately known as
+                  The Grand Old Lady — Everton has been a cornerstone of the
+                  city of Liverpool, not just in footballing terms, but as a
+                  symbol of working-class pride, loyalty, and identity. The blue
+                  half of Merseyside lives and breathes Everton, with generation
+                  after generation of fans passing down the club’s values of
+                  heart, hard work, and unwavering support.
+                </p>
+                <p class="mb-reset">
+                  Everton trophy cabinet reflects its glorious past: nine First
+                  Division (now Premier League) titles, five FA Cups, and a
+                  European Cup Winners’ Cup. Legendary players like Dixie Dean —
+                  who scored a record 60 goals in a single league season — as
+                  well as Alan Ball, Neville Southall, and more recently Tim
+                  Cahill and Leighton Baines, have left indelible marks on the
+                  club's proud history. Despite recent challenges and a battle
+                  to reclaim consistent top-flight form, Everton’s ambition
+                  remains clear. With a passionate fanbase behind them, a
+                  promising youth academy, and a new stadium on the horizon at
+                  Bramley-Moore Dock, the club is gearing up for a new era — one
+                  that respects the past but looks boldly toward the future.
+                </p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="management__section mb-50">
+        </section>
+        <section class="management__section section">
           <div class="container">
-            <div class="title__block"><img src="/images/58fddc8e0951782199d971229c9a0382.png" class="logo-70" />
+            <div class="title__block">
+              <img
+                src="/images/58fddc8e0951782199d971229c9a0382.png"
+                class="title__block_logo"
+              />
               <h2 class="title mb-reset">management</h2>
             </div>
             <div class="rows-20 grid-cols-4">
-              <div class="manager__card"><a href="#" class="link-reset manager__photo_block"><img class="manager__photo" src="/images/434af369f1f9eb90f9f09a75f215acb9.png" /></a>
-                <div class="manager__info"><a href="#" class="hover-text link-reset manager__name">todd simpson</a>
+              <div class="manager__card">
+                <a href="#" class="link-reset manager__photo_block"
+                  ><img
+                    class="manager__photo"
+                    src="/images/434af369f1f9eb90f9f09a75f215acb9.png"
+                /></a>
+                <div class="manager__info">
+                  <a href="#" class="hover-text link-reset manager__name"
+                    >todd simpson</a
+                  >
                   <p class="mb-reset">coach</p>
                 </div>
               </div>
-              <div class="manager__card"><a href="#" class="link-reset manager__photo_block"><img class="manager__photo" src="/images/16fbb0570e335cfd398e8554917372a2.png" /></a>
-                <div class="manager__info"><a href="#" class="hover-text link-reset manager__name">robert jaxon</a>
+              <div class="manager__card">
+                <a href="#" class="link-reset manager__photo_block"
+                  ><img
+                    class="manager__photo"
+                    src="/images/16fbb0570e335cfd398e8554917372a2.png"
+                /></a>
+                <div class="manager__info">
+                  <a href="#" class="hover-text link-reset manager__name"
+                    >robert jaxon</a
+                  >
                   <p class="mb-reset">manager</p>
                 </div>
               </div>
-              <div class="manager__card"><a href="#" class="link-reset manager__photo_block"><img class="manager__photo" src="/images/d96a52252f04dadf8f8d7a44e70e573d.png" /></a>
-                <div class="manager__info"><a href="#" class="hover-text link-reset manager__name">fox armstrong</a>
+              <div class="manager__card">
+                <a href="#" class="link-reset manager__photo_block"
+                  ><img
+                    class="manager__photo"
+                    src="/images/d96a52252f04dadf8f8d7a44e70e573d.png"
+                /></a>
+                <div class="manager__info">
+                  <a href="#" class="hover-text link-reset manager__name"
+                    >fox armstrong</a
+                  >
                   <p class="mb-reset">president</p>
                 </div>
               </div>
-              <div class="manager__card"><a href="#" class="link-reset manager__photo_block"><img class="manager__photo" src="/images/78206eb7f510e2a6b1c2db3afa67867e.png" /></a>
-                <div class="manager__info"><a href="#" class="hover-text link-reset manager__name">tobi moreno</a>
+              <div class="manager__card">
+                <a href="#" class="link-reset manager__photo_block"
+                  ><img
+                    class="manager__photo"
+                    src="/images/78206eb7f510e2a6b1c2db3afa67867e.png"
+                /></a>
+                <div class="manager__info">
+                  <a href="#" class="hover-text link-reset manager__name"
+                    >tobi moreno</a
+                  >
                   <p class="mb-reset">assistant coach</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="players__section mb-50">
+        </section>
+        <section class="players__section section">
           <div class="container">
-            <div class="title__block"><img src="/images/58fddc8e0951782199d971229c9a0382.png" class="logo-70" />
+            <div class="title__block">
+              <img
+                src="/images/58fddc8e0951782199d971229c9a0382.png"
+                class="logo-70"
+              />
               <h2 class="title mb-reset">firts team</h2>
             </div>
             <div class="rows-20 grid-cols-4">
-              <div class="player__card">
+              <article class="player__card">
                 <div class="player-card__body">
-                  <div class="player-stats__block flx-clmn"><img src="/images/b7c655f0c5acfc2fac4514ccca4505f0.png" class="logo-70" />
+                  <div class="player-stats__block flx-clmn">
+                    <img src="/images/everton.png" class="player-stats__logo" />
                     <div class="player-stats__item">
                       <p class="mb-reset">appearances</p>
                       <p class="reset title--22">297</p>
@@ -122,18 +266,27 @@
                       <p class="mb-reset">shoats</p>
                       <p class="reset title--22">1060</p>
                     </div>
-                  </div><a href="#" class="link-reset player__img_block image-block"><img class="ibg player__img hover-scale" src="/images/1c8006e66313cd1995017aecefa6db08.webp" /></a>
+                  </div>
+                  <a href="#" class="link-reset player__img_block image-block"
+                    ><img
+                      class="player__club_img hover-scale"
+                      src="/images/1c8006e66313cd1995017aecefa6db08.webp"
+                  /></a>
                 </div>
                 <div class="player-card__footer">
-                  <div class="player__info_block"><a class="hover-text link-reset title-26">jordan pickford</a>
+                  <div class="player__info_block">
+                    <a class="hover-text link-reset title-26"
+                      >jordan pickford</a
+                    >
                     <p class="mb-reset text--violet">goalkeeper</p>
                   </div>
                   <p class="mb-reset title">1</p>
                 </div>
-              </div>
-              <div class="player__card">
+              </article>
+              <article class="player__card">
                 <div class="player-card__body">
-                  <div class="player-stats__block flx-clmn"><img src="/images/b7c655f0c5acfc2fac4514ccca4505f0.png" class="logo-70" />
+                  <div class="player-stats__block flx-clmn">
+                    <img src="/images/everton.png" class="player-stats__logo" />
                     <div class="player-stats__item">
                       <p class="mb-reset">appearances</p>
                       <p class="reset title--22">63</p>
@@ -150,18 +303,27 @@
                       <p class="mb-reset">shoats</p>
                       <p class="reset title--22">789</p>
                     </div>
-                  </div><a href="#" class="link-reset player__img_block image-block"><img class="ibg player__img hover-scale" src="/images/53417fd969e4dfbaaa7fe444c8b03fcc.webp" /></a>
+                  </div>
+                  <a href="#" class="link-reset player__img_block image-block"
+                    ><img
+                      class="player__club_img hover-scale"
+                      src="/images/53417fd969e4dfbaaa7fe444c8b03fcc.webp"
+                  /></a>
                 </div>
                 <div class="player-card__footer">
-                  <div class="player__info_block"><a class="hover-text link-reset title-26">nicolas jackson</a>
+                  <div class="player__info_block">
+                    <a class="hover-text link-reset title-26"
+                      >nicolas jackson</a
+                    >
                     <p class="mb-reset text--violet">defender</p>
                   </div>
                   <p class="mb-reset title">02</p>
                 </div>
-              </div>
-              <div class="player__card">
+              </article>
+              <article class="player__card">
                 <div class="player-card__body">
-                  <div class="player-stats__block flx-clmn"><img src="/images/b7c655f0c5acfc2fac4514ccca4505f0.png" class="logo-70" />
+                  <div class="player-stats__block flx-clmn">
+                    <img src="/images/everton.png" class="player-stats__logo" />
                     <div class="player-stats__item">
                       <p class="mb-reset">appearances</p>
                       <p class="reset title--22">203</p>
@@ -178,18 +340,25 @@
                       <p class="mb-reset">shoats</p>
                       <p class="reset title--22">55</p>
                     </div>
-                  </div><a href="#" class="link-reset player__img_block image-block"><img class="ibg player__img hover-scale" src="/images/5eaef54493f0560796e1957b4c0e645a.webp" /></a>
+                  </div>
+                  <a href="#" class="link-reset player__img_block image-block"
+                    ><img
+                      class="player__club_img hover-scale"
+                      src="/images/5eaef54493f0560796e1957b4c0e645a.webp"
+                  /></a>
                 </div>
                 <div class="player-card__footer">
-                  <div class="player__info_block"><a class="hover-text link-reset title-26">don burn</a>
+                  <div class="player__info_block">
+                    <a class="hover-text link-reset title-26">don burn</a>
                     <p class="mb-reset text--violet">defender</p>
                   </div>
                   <p class="mb-reset title">03</p>
                 </div>
-              </div>
-              <div class="player__card">
+              </article>
+              <article class="player__card">
                 <div class="player-card__body">
-                  <div class="player-stats__block flx-clmn"><img src="/images/b7c655f0c5acfc2fac4514ccca4505f0.png" class="logo-70" />
+                  <div class="player-stats__block flx-clmn">
+                    <img src="/images/everton.png" class="player-stats__logo" />
                     <div class="player-stats__item">
                       <p class="mb-reset">appearances</p>
                       <p class="reset title--22">78</p>
@@ -206,18 +375,62 @@
                       <p class="mb-reset">shoats</p>
                       <p class="reset title--22">194</p>
                     </div>
-                  </div><a href="#" class="link-reset player__img_block image-block"><img class="ibg player__img hover-scale" src="/images/2fba9ddf1f7bb8ae2636b1993bea1f8d.webp" /></a>
+                  </div>
+                  <a href="#" class="link-reset player__img_block image-block"
+                    ><img
+                      class="player__club_img hover-scale"
+                      src="/images/2fba9ddf1f7bb8ae2636b1993bea1f8d.webp"
+                  /></a>
                 </div>
                 <div class="player-card__footer">
-                  <div class="player__info_block"><a class="hover-text link-reset title-26">matheus cunha</a>
+                  <div class="player__info_block">
+                    <a class="hover-text link-reset title-26">matheus cunha</a>
                     <p class="mb-reset text--violet">defender</p>
                   </div>
                   <p class="mb-reset title">05</p>
                 </div>
-              </div>
-              <div class="player__card">
+              </article>
+              <article class="player__card">
                 <div class="player-card__body">
-                  <div class="player-stats__block flx-clmn"><img src="/images/b7c655f0c5acfc2fac4514ccca4505f0.png" class="logo-70" />
+                  <div class="player-stats__block flx-clmn">
+                    <img src="/images/everton.png" class="player-stats__logo" />
+                    <div class="player-stats__item">
+                      <p class="mb-reset">appearances</p>
+                      <p class="reset title--22">297</p>
+                    </div>
+                    <div class="player-stats__item">
+                      <p class="mb-reset">goals</p>
+                      <p class="reset title--22">185</p>
+                    </div>
+                    <div class="player-stats__item">
+                      <p class="mb-reset">assists</p>
+                      <p class="reset title--22">87</p>
+                    </div>
+                    <div class="player-stats__item">
+                      <p class="mb-reset">shoats</p>
+                      <p class="reset title--22">1060</p>
+                    </div>
+                  </div>
+                  <a href="#" class="link-reset player__img_block image-block"
+                    ><img
+                      class="player__club_img hover-scale"
+                      src="/images/025eb7facff90d3f54f44820f1ec8de6.webp"
+                  /></a>
+                </div>
+                <div class="player-card__footer">
+                  <div class="player__info_block">
+                    <a class="hover-text link-reset title-26"
+                      >jordan pickford</a
+                    >
+                    <p class="mb-reset text--violet">midfielder</p>
+                  </div>
+                  <p class="mb-reset title">18</p>
+                </div>
+              </article>
+              <article class="player__card">
+                <div class="player-card__body">
+                  <div class="player-stats__block flx-clmn">
+                    <img src="/images/everton.png" class="player-stats__logo" />
                     <div class="player-stats__item">
                       <p class="mb-reset">appearances</p>
                       <p class="reset title--22">78</p>
@@ -234,46 +447,25 @@
                       <p class="mb-reset">shoats</p>
                       <p class="reset title--22">194</p>
                     </div>
-                  </div><a href="#" class="link-reset player__img_block image-block"><img class="ibg player__img hover-scale" src="/images/2fba9ddf1f7bb8ae2636b1993bea1f8d.webp" /></a>
+                  </div>
+                  <a href="#" class="link-reset player__img_block image-block"
+                    ><img
+                      class="player__club_img hover-scale"
+                      src="/images/2fba9ddf1f7bb8ae2636b1993bea1f8d.webp"
+                  /></a>
                 </div>
                 <div class="player-card__footer">
-                  <div class="player__info_block"><a class="hover-text link-reset title-26">matheus cunha</a>
+                  <div class="player__info_block">
+                    <a class="hover-text link-reset title-26">matheus cunha</a>
                     <p class="mb-reset text--violet">defender</p>
                   </div>
-                  <p class="mb-reset title">06</p>
+                  <p class="mb-reset title">05</p>
                 </div>
-              </div>
-              <div class="player__card">
+              </article>
+              <article class="player__card">
                 <div class="player-card__body">
-                  <div class="player-stats__block flx-clmn"><img src="/images/b7c655f0c5acfc2fac4514ccca4505f0.png" class="logo-70" />
-                    <div class="player-stats__item">
-                      <p class="mb-reset">appearances</p>
-                      <p class="reset title--22">203</p>
-                    </div>
-                    <div class="player-stats__item">
-                      <p class="mb-reset">goals</p>
-                      <p class="reset title--22">6</p>
-                    </div>
-                    <div class="player-stats__item">
-                      <p class="mb-reset">assists</p>
-                      <p class="reset title--22">3</p>
-                    </div>
-                    <div class="player-stats__item">
-                      <p class="mb-reset">shoats</p>
-                      <p class="reset title--22">55</p>
-                    </div>
-                  </div><a href="#" class="link-reset player__img_block image-block"><img class="ibg player__img hover-scale" src="/images/5eaef54493f0560796e1957b4c0e645a.webp" /></a>
-                </div>
-                <div class="player-card__footer">
-                  <div class="player__info_block"><a class="hover-text link-reset title-26">don burn</a>
-                    <p class="mb-reset text--violet">midfielder</p>
-                  </div>
-                  <p class="mb-reset title">07</p>
-                </div>
-              </div>
-              <div class="player__card">
-                <div class="player-card__body">
-                  <div class="player-stats__block flx-clmn"><img src="/images/b7c655f0c5acfc2fac4514ccca4505f0.png" class="logo-70" />
+                  <div class="player-stats__block flx-clmn">
+                    <img src="/images/everton.png" class="player-stats__logo" />
                     <div class="player-stats__item">
                       <p class="mb-reset">appearances</p>
                       <p class="reset title--22">63</p>
@@ -290,74 +482,27 @@
                       <p class="mb-reset">shoats</p>
                       <p class="reset title--22">789</p>
                     </div>
-                  </div><a href="#" class="link-reset player__img_block image-block"><img class="ibg player__img hover-scale" src="/images/53417fd969e4dfbaaa7fe444c8b03fcc.webp" /></a>
+                  </div>
+                  <a href="#" class="link-reset player__img_block image-block"
+                    ><img
+                      class="player__club_img hover-scale"
+                      src="/images/53417fd969e4dfbaaa7fe444c8b03fcc.webp"
+                  /></a>
                 </div>
                 <div class="player-card__footer">
-                  <div class="player__info_block"><a class="hover-text link-reset title-26">nicolas jackson</a>
-                    <p class="mb-reset text--violet">midfielder</p>
+                  <div class="player__info_block">
+                    <a class="hover-text link-reset title-26"
+                      >nicolas jackson</a
+                    >
+                    <p class="mb-reset text--violet">defender</p>
                   </div>
-                  <p class="mb-reset title">15</p>
+                  <p class="mb-reset title">02</p>
                 </div>
-              </div>
-              <div class="player__card">
+              </article>
+              <article class="player__card">
                 <div class="player-card__body">
-                  <div class="player-stats__block flx-clmn"><img src="/images/b7c655f0c5acfc2fac4514ccca4505f0.png" class="logo-70" />
-                    <div class="player-stats__item">
-                      <p class="mb-reset">appearances</p>
-                      <p class="reset title--22">297</p>
-                    </div>
-                    <div class="player-stats__item">
-                      <p class="mb-reset">goals</p>
-                      <p class="reset title--22">185</p>
-                    </div>
-                    <div class="player-stats__item">
-                      <p class="mb-reset">assists</p>
-                      <p class="reset title--22">87</p>
-                    </div>
-                    <div class="player-stats__item">
-                      <p class="mb-reset">shoats</p>
-                      <p class="reset title--22">1060</p>
-                    </div>
-                  </div><a href="#" class="link-reset player__img_block image-block"><img class="ibg player__img hover-scale" src="/images/025eb7facff90d3f54f44820f1ec8de6.webp" /></a>
-                </div>
-                <div class="player-card__footer">
-                  <div class="player__info_block"><a class="hover-text link-reset title-26">jordan pickford</a>
-                    <p class="mb-reset text--violet">midfielder</p>
-                  </div>
-                  <p class="mb-reset title">18</p>
-                </div>
-              </div>
-              <div class="player__card">
-                <div class="player-card__body">
-                  <div class="player-stats__block flx-clmn"><img src="/images/b7c655f0c5acfc2fac4514ccca4505f0.png" class="logo-70" />
-                    <div class="player-stats__item">
-                      <p class="mb-reset">appearances</p>
-                      <p class="reset title--22">297</p>
-                    </div>
-                    <div class="player-stats__item">
-                      <p class="mb-reset">goals</p>
-                      <p class="reset title--22">185</p>
-                    </div>
-                    <div class="player-stats__item">
-                      <p class="mb-reset">assists</p>
-                      <p class="reset title--22">87</p>
-                    </div>
-                    <div class="player-stats__item">
-                      <p class="mb-reset">shoats</p>
-                      <p class="reset title--22">1060</p>
-                    </div>
-                  </div><a href="#" class="link-reset player__img_block image-block"><img class="ibg player__img hover-scale" src="/images/025eb7facff90d3f54f44820f1ec8de6.webp" /></a>
-                </div>
-                <div class="player-card__footer">
-                  <div class="player__info_block"><a class="hover-text link-reset title-26">jordan pickford</a>
-                    <p class="mb-reset text--violet">midfielder</p>
-                  </div>
-                  <p class="mb-reset title">18</p>
-                </div>
-              </div>
-              <div class="player__card">
-                <div class="player-card__body">
-                  <div class="player-stats__block flx-clmn"><img src="/images/b7c655f0c5acfc2fac4514ccca4505f0.png" class="logo-70" />
+                  <div class="player-stats__block flx-clmn">
+                    <img src="/images/everton.png" class="player-stats__logo" />
                     <div class="player-stats__item">
                       <p class="mb-reset">appearances</p>
                       <p class="reset title--22">63</p>
@@ -374,18 +519,64 @@
                       <p class="mb-reset">shoats</p>
                       <p class="reset title--22">789</p>
                     </div>
-                  </div><a href="#" class="link-reset player__img_block image-block"><img class="ibg player__img hover-scale" src="/images/53417fd969e4dfbaaa7fe444c8b03fcc.webp" /></a>
+                  </div>
+                  <a href="#" class="link-reset player__img_block image-block"
+                    ><img
+                      class="player__club_img hover-scale"
+                      src="/images/53417fd969e4dfbaaa7fe444c8b03fcc.webp"
+                  /></a>
                 </div>
                 <div class="player-card__footer">
-                  <div class="player__info_block"><a class="hover-text link-reset title-26">nicolas jackson</a>
-                    <p class="mb-reset text--violet">forward</p>
+                  <div class="player__info_block">
+                    <a class="hover-text link-reset title-26"
+                      >nicolas jackson</a
+                    >
+                    <p class="mb-reset text--violet">defender</p>
                   </div>
-                  <p class="mb-reset title">09</p>
+                  <p class="mb-reset title">02</p>
                 </div>
-              </div>
-              <div class="player__card">
+              </article>
+              <article class="player__card">
                 <div class="player-card__body">
-                  <div class="player-stats__block flx-clmn"><img src="/images/b7c655f0c5acfc2fac4514ccca4505f0.png" class="logo-70" />
+                  <div class="player-stats__block flx-clmn">
+                    <img src="/images/everton.png" class="player-stats__logo" />
+                    <div class="player-stats__item">
+                      <p class="mb-reset">appearances</p>
+                      <p class="reset title--22">63</p>
+                    </div>
+                    <div class="player-stats__item">
+                      <p class="mb-reset">goals</p>
+                      <p class="reset title--22">24</p>
+                    </div>
+                    <div class="player-stats__item">
+                      <p class="mb-reset">assists</p>
+                      <p class="reset title--22">10</p>
+                    </div>
+                    <div class="player-stats__item">
+                      <p class="mb-reset">shoats</p>
+                      <p class="reset title--22">789</p>
+                    </div>
+                  </div>
+                  <a href="#" class="link-reset player__img_block image-block"
+                    ><img
+                      class="player__club_img hover-scale"
+                      src="/images/53417fd969e4dfbaaa7fe444c8b03fcc.webp"
+                  /></a>
+                </div>
+                <div class="player-card__footer">
+                  <div class="player__info_block">
+                    <a class="hover-text link-reset title-26"
+                      >nicolas jackson</a
+                    >
+                    <p class="mb-reset text--violet">defender</p>
+                  </div>
+                  <p class="mb-reset title">02</p>
+                </div>
+              </article>
+              <article class="player__card">
+                <div class="player-card__body">
+                  <div class="player-stats__block flx-clmn">
+                    <img src="/images/everton.png" class="player-stats__logo" />
                     <div class="player-stats__item">
                       <p class="mb-reset">appearances</p>
                       <p class="reset title--22">203</p>
@@ -402,18 +593,25 @@
                       <p class="mb-reset">shoats</p>
                       <p class="reset title--22">55</p>
                     </div>
-                  </div><a href="#" class="link-reset player__img_block image-block"><img class="ibg player__img hover-scale" src="/images/5eaef54493f0560796e1957b4c0e645a.webp" /></a>
+                  </div>
+                  <a href="#" class="link-reset player__img_block image-block"
+                    ><img
+                      class="player__club_img hover-scale"
+                      src="/images/5eaef54493f0560796e1957b4c0e645a.webp"
+                  /></a>
                 </div>
                 <div class="player-card__footer">
-                  <div class="player__info_block"><a class="hover-text link-reset title-26">don burn</a>
-                    <p class="mb-reset text--violet">forward</p>
+                  <div class="player__info_block">
+                    <a class="hover-text link-reset title-26">don burn</a>
+                    <p class="mb-reset text--violet">defender</p>
                   </div>
-                  <p class="mb-reset title">10</p>
+                  <p class="mb-reset title">03</p>
                 </div>
-              </div>
-              <div class="player__card">
+              </article>
+              <article class="player__card">
                 <div class="player-card__body">
-                  <div class="player-stats__block flx-clmn"><img src="/images/b7c655f0c5acfc2fac4514ccca4505f0.png" class="logo-70" />
+                  <div class="player-stats__block flx-clmn">
+                    <img src="/images/everton.png" class="player-stats__logo" />
                     <div class="player-stats__item">
                       <p class="mb-reset">appearances</p>
                       <p class="reset title--22">78</p>
@@ -430,219 +628,1124 @@
                       <p class="mb-reset">shoats</p>
                       <p class="reset title--22">194</p>
                     </div>
-                  </div><a href="#" class="link-reset player__img_block image-block"><img class="ibg player__img hover-scale" src="/images/2fba9ddf1f7bb8ae2636b1993bea1f8d.webp" /></a>
+                  </div>
+                  <a href="#" class="link-reset player__img_block image-block"
+                    ><img
+                      class="player__club_img hover-scale"
+                      src="/images/2fba9ddf1f7bb8ae2636b1993bea1f8d.webp"
+                  /></a>
                 </div>
                 <div class="player-card__footer">
-                  <div class="player__info_block"><a class="hover-text link-reset title-26">matheus cunha</a>
-                    <p class="mb-reset text--violet">forward</p>
+                  <div class="player__info_block">
+                    <a class="hover-text link-reset title-26">matheus cunha</a>
+                    <p class="mb-reset text--violet">defender</p>
                   </div>
-                  <p class="mb-reset title">11</p>
+                  <p class="mb-reset title">05</p>
                 </div>
-              </div>
+              </article>
+              <article class="player__card">
+                <div class="player-card__body">
+                  <div class="player-stats__block flx-clmn">
+                    <img src="/images/everton.png" class="player-stats__logo" />
+                    <div class="player-stats__item">
+                      <p class="mb-reset">appearances</p>
+                      <p class="reset title--22">297</p>
+                    </div>
+                    <div class="player-stats__item">
+                      <p class="mb-reset">goals</p>
+                      <p class="reset title--22">185</p>
+                    </div>
+                    <div class="player-stats__item">
+                      <p class="mb-reset">assists</p>
+                      <p class="reset title--22">87</p>
+                    </div>
+                    <div class="player-stats__item">
+                      <p class="mb-reset">shoats</p>
+                      <p class="reset title--22">1060</p>
+                    </div>
+                  </div>
+                  <a href="#" class="link-reset player__img_block image-block"
+                    ><img
+                      class="player__club_img hover-scale"
+                      src="/images/025eb7facff90d3f54f44820f1ec8de6.webp"
+                  /></a>
+                </div>
+                <div class="player-card__footer">
+                  <div class="player__info_block">
+                    <a class="hover-text link-reset title-26"
+                      >jordan pickford</a
+                    >
+                    <p class="mb-reset text--violet">midfielder</p>
+                  </div>
+                  <p class="mb-reset title">18</p>
+                </div>
+              </article>
             </div>
           </div>
-        </div>
-        <div class="cups__section mb-50">
+        </section>
+        <section class="cups__section section">
           <div class="container">
-            <div class="title__block"><img src="/images/58fddc8e0951782199d971229c9a0382.png" class="logo-70" />
+            <div class="title__block">
+              <img
+                src="/images/58fddc8e0951782199d971229c9a0382.png"
+                class="title__block_logo"
+              />
               <h2 class="title mb-reset">our achievements</h2>
             </div>
-            <div class="rows-20 grid-cols-4">
-              <div class="cup__item flx-clmn"><img class="cup__img" src="/images/33fe6cf60c245936618288cc223323b5.png" />
+            <div class="cups__items">
+              <article class="cup__item flx-clmn">
+                <img
+                  class="cup__img"
+                  src="/images/33fe6cf60c245936618288cc223323b5.png"
+                />
                 <h3 class="title--30 mb-reset">premier league</h3>
                 <p class="mb-reset text--violet">1965, 1978, 1992</p>
-              </div>
-              <div class="cup__item flx-clmn"><img class="cup__img" src="/images/62f71fce0d1ffde146cde8c89fbe1ada.png" />
+              </article>
+              <article class="cup__item flx-clmn">
+                <img
+                  class="cup__img"
+                  src="/images/62f71fce0d1ffde146cde8c89fbe1ada.png"
+                />
                 <h3 class="title--30 mb-reset">english cup</h3>
                 <p class="mb-reset text--violet">1971, 1989, 1996</p>
-              </div>
-              <div class="cup__item flx-clmn"><img class="cup__img" src="/images/79938acabe071c0536a342526114e5c7.png" />
+              </article>
+              <article class="cup__item flx-clmn">
+                <img
+                  class="cup__img"
+                  src="/images/79938acabe071c0536a342526114e5c7.png"
+                />
                 <h3 class="title--30 mb-reset">champions league</h3>
                 <p class="mb-reset text--violet">1987, 1996</p>
-              </div>
-              <div class="cup__item flx-clmn"><img class="cup__img" src="/images/53858a016595d7713a151e3332f5a41b.png" />
+              </article>
+              <article class="cup__item flx-clmn">
+                <img
+                  class="cup__img"
+                  src="/images/53858a016595d7713a151e3332f5a41b.png"
+                />
                 <h3 class="title--30 mb-reset">europe league</h3>
                 <p class="mb-reset text--violet">2000, 2002</p>
+              </article>
+            </div>
+            <div class="swiper cups__swiper">
+              <div class="swiper-wrapper swiper__body">
+                <div class="swiper-slide cup__swiper_slide">
+                  <article class="cup__item flx-clmn">
+                    <img
+                      class="cup__img"
+                      src="/images/33fe6cf60c245936618288cc223323b5.png"
+                    />
+                    <h3 class="title--30 mb-reset">premier league</h3>
+                    <p class="mb-reset text--violet">1965, 1978, 1992</p>
+                  </article>
+                </div>
+                <div class="swiper-slide cup__swiper_slide">
+                  <article class="cup__item flx-clmn">
+                    <img
+                      class="cup__img"
+                      src="/images/62f71fce0d1ffde146cde8c89fbe1ada.png"
+                    />
+                    <h3 class="title--30 mb-reset">english cup</h3>
+                    <p class="mb-reset text--violet">1971, 1989, 1996</p>
+                  </article>
+                </div>
+                <div class="swiper-slide cup__swiper_slide">
+                  <article class="cup__item flx-clmn">
+                    <img
+                      class="cup__img"
+                      src="/images/79938acabe071c0536a342526114e5c7.png"
+                    />
+                    <h3 class="title--30 mb-reset">champions league</h3>
+                    <p class="mb-reset text--violet">1987, 1996</p>
+                  </article>
+                </div>
+                <div class="swiper-slide cup__swiper_slide">
+                  <article class="cup__item flx-clmn">
+                    <img
+                      class="cup__img"
+                      src="/images/53858a016595d7713a151e3332f5a41b.png"
+                    />
+                    <h3 class="title--30 mb-reset">europe league</h3>
+                    <p class="mb-reset text--violet">2000, 2002</p>
+                  </article>
+                </div>
+              </div>
+              <div class="swiper__pagination"></div>
+              <div class="swiper__buttons">
+                <div class="swiper-button-prev custom__buttom_prev"></div>
+                <div class="swiper-button-next custom__buttom_next"></div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="stats__section mb-50">
+        </section>
+        <section class="stats__section section">
           <div class="container">
-            <div class="title__block"><img src="/images/58fddc8e0951782199d971229c9a0382.png" class="logo-70" />
+            <div class="title__block">
+              <img
+                src="/images/58fddc8e0951782199d971229c9a0382.png"
+                class="title__block_logo"
+              />
               <h2 class="title mb-reset">premier league</h2>
             </div>
-            <div class="table__wrap">
-              <div class="table__head grid-pts-tbl"><span>Rank</span><span class="text-left">team</span><span>p</span><span>w</span><span>d</span><span>l</span><span>gf</span><span>ga</span><span>gd</span><span>pts</span></div>
-              <div class="table__body grid-pts-tbl"><span class="t2je5puh">1.</span><a href="#" class="link-reset table__team_block hover-text"><img class="logo--30" src="/images/78ba41add1f464050ac6c355cc9ecc2a.png" /><span>arsenal</span></a><span>17</span><span class="text-green">10</span><span>4</span><span class="text-red">3</span><span>42</span><span>27</span><span>16</span><span class="title--20">78</span></div>
-              <div class="table__body grid-pts-tbl"><span class="t2je5puh">2.</span><a href="#" class="link-reset table__team_block hover-text"><img class="logo--30" src="/images/0ab23b908a4c1e72fa3d64d5825ebb75.png" /><span>manchester city</span></a><span>17</span><span class="text-green">10</span><span>4</span><span class="text-red">3</span><span>42</span><span>27</span><span>16</span><span class="title--20">75</span></div>
-              <div class="table__body grid-pts-tbl"><span class="t2je5puh">3.</span><a href="#" class="link-reset table__team_block hover-text"><img class="logo--30" src="/images/4c0fabb0562e69837ff5a57448f36a2e.png" /><span>chelsea</span></a><span>17</span><span class="text-green">10</span><span>4</span><span class="text-red">3</span><span>42</span><span>27</span><span>16</span><span class="title--20">74</span></div>
-              <div class="table__body grid-pts-tbl"><span class="t2je5puh">4.</span><a href="#" class="link-reset table__team_block hover-text"><img class="logo--30" src="/images/572cef089f2866c8f796e3221c94682f.png" /><span>brentford</span></a><span>17</span><span class="text-green">10</span><span>4</span><span class="text-red">3</span><span>42</span><span>27</span><span>16</span><span class="title--20">72</span></div>
-              <div class="table__body grid-pts-tbl"><span class="t2je5puh">5.</span><a href="#" class="link-reset table__team_block hover-text"><img class="logo--30" src="/images/de92eb6527e467edd83a0b77de7a243f.png" /><span>brighton</span></a><span>17</span><span class="text-green">10</span><span>4</span><span class="text-red">3</span><span>42</span><span>27</span><span>16</span><span class="title--20">70</span></div>
-              <div class="table__body grid-pts-tbl"><span class="t2je5puh">6.</span><a href="#" class="link-reset table__team_block hover-text"><img class="logo--30" src="/images/50afa9beb13e8d213a97fea2e0dfe5ba.png" /><span>newcastle</span></a><span>17</span><span class="text-green">10</span><span>4</span><span class="text-red">3</span><span>42</span><span>27</span><span>16</span><span class="title--20">69</span></div>
-              <div class="table__body grid-pts-tbl"><span class="t2je5puh">7.</span><a href="#" class="link-reset table__team_block hover-text"><img class="logo--30" src="/images/59cff6fb7f43b02a67d29f24196673d6.png" /><span>liverpool</span></a><span>17</span><span class="text-green">10</span><span>4</span><span class="text-red">3</span><span>42</span><span>27</span><span>16</span><span class="title--20">66</span></div>
-              <div class="table__body grid-pts-tbl"><span class="t2je5puh">8.</span><a href="#" class="link-reset table__team_block hover-text"><img class="logo--30" src="/images/3a3aa54b7ab512052ebdc6469e7d90ea.png" /><span>wolverhampton</span></a><span>17</span><span class="text-green">10</span><span>4</span><span class="text-red">3</span><span>42</span><span>27</span><span>16</span><span class="title--20">65</span></div>
-              <div class="table__body grid-pts-tbl"><span class="t2je5puh">9.</span><a href="#" class="link-reset table__team_block hover-text"><img class="logo--30" src="/images/78ba41add1f464050ac6c355cc9ecc2a.png" /><span>arsenal</span></a><span>17</span><span class="text-green">10</span><span>4</span><span class="text-red">3</span><span>42</span><span>27</span><span>16</span><span class="title--20">64</span></div>
-              <div class="table__body grid-pts-tbl"><span class="t2je5puh">10.</span><a href="#" class="link-reset table__team_block hover-text"><img class="logo--30" src="/images/0ab23b908a4c1e72fa3d64d5825ebb75.png" /><span>manchester city</span></a><span>17</span><span class="text-green">10</span><span>4</span><span class="text-red">3</span><span>42</span><span>27</span><span>16</span><span class="title--20">61</span></div>
+            <div class="table__wrap pts__table">
+              <div class="table__head grid-pts-tbl">
+                <span>№</span><span class="text-left">team</span><span>p</span
+                ><span>w</span><span>d</span><span>l</span><span>gf</span
+                ><span>ga</span><span>gd</span><span>pts</span>
+              </div>
+              <div class="table__body grid-pts-tbl">
+                <span class="t2je5puh">1.</span
+                ><a href="#" class="link-reset table__team_block hover-text"
+                  ><img class="logo--30" src="/images/arsenal.png" /><span
+                    >arsenal</span
+                  ></a
+                ><span>17</span><span class="text-green">10</span><span>4</span
+                ><span class="text-red">3</span><span>42</span><span>27</span
+                ><span>16</span><span class="title--20">78</span>
+              </div>
+              <div class="table__body grid-pts-tbl">
+                <span class="t2je5puh">2.</span
+                ><a href="#" class="link-reset table__team_block hover-text"
+                  ><img class="logo--30" src="/images/man-city.png" /><span
+                    >manchester city</span
+                  ></a
+                ><span>17</span><span class="text-green">10</span><span>4</span
+                ><span class="text-red">3</span><span>42</span><span>27</span
+                ><span>16</span><span class="title--20">75</span>
+              </div>
+              <div class="table__body grid-pts-tbl">
+                <span class="t2je5puh">3.</span
+                ><a href="#" class="link-reset table__team_block hover-text"
+                  ><img class="logo--30" src="/images/chelsea.png" /><span
+                    >chelsea</span
+                  ></a
+                ><span>17</span><span class="text-green">10</span><span>4</span
+                ><span class="text-red">3</span><span>42</span><span>27</span
+                ><span>16</span><span class="title--20">74</span>
+              </div>
+              <div class="table__body grid-pts-tbl">
+                <span class="t2je5puh">4.</span
+                ><a href="#" class="link-reset table__team_block hover-text"
+                  ><img class="logo--30" src="/images/brentford.png" /><span
+                    >brentford</span
+                  ></a
+                ><span>17</span><span class="text-green">10</span><span>4</span
+                ><span class="text-red">3</span><span>42</span><span>27</span
+                ><span>16</span><span class="title--20">72</span>
+              </div>
+              <div class="table__body grid-pts-tbl">
+                <span class="t2je5puh">5.</span
+                ><a href="#" class="link-reset table__team_block hover-text"
+                  ><img class="logo--30" src="/images/brighton.png" /><span
+                    >brighton</span
+                  ></a
+                ><span>17</span><span class="text-green">10</span><span>4</span
+                ><span class="text-red">3</span><span>42</span><span>27</span
+                ><span>16</span><span class="title--20">70</span>
+              </div>
+              <div class="table__body grid-pts-tbl">
+                <span class="t2je5puh">6.</span
+                ><a href="#" class="link-reset table__team_block hover-text"
+                  ><img class="logo--30" src="/images/newcastle.png" /><span
+                    >newcastle</span
+                  ></a
+                ><span>17</span><span class="text-green">10</span><span>4</span
+                ><span class="text-red">3</span><span>42</span><span>27</span
+                ><span>16</span><span class="title--20">69</span>
+              </div>
+              <div class="table__body grid-pts-tbl">
+                <span class="t2je5puh">7.</span
+                ><a href="#" class="link-reset table__team_block hover-text"
+                  ><img class="logo--30" src="/images/liver.png" /><span
+                    >liverpool</span
+                  ></a
+                ><span>17</span><span class="text-green">10</span><span>4</span
+                ><span class="text-red">3</span><span>42</span><span>27</span
+                ><span>16</span><span class="title--20">66</span>
+              </div>
+              <div class="table__body grid-pts-tbl">
+                <span class="t2je5puh">8.</span
+                ><a href="#" class="link-reset table__team_block hover-text"
+                  ><img class="logo--30" src="/images/wolver.png" /><span
+                    >wolverhampton</span
+                  ></a
+                ><span>17</span><span class="text-green">10</span><span>4</span
+                ><span class="text-red">3</span><span>42</span><span>27</span
+                ><span>16</span><span class="title--20">65</span>
+              </div>
+              <div class="table__body grid-pts-tbl">
+                <span class="t2je5puh">9.</span
+                ><a href="#" class="link-reset table__team_block hover-text"
+                  ><img class="logo--30" src="/images/everton.png" /><span
+                    >everton</span
+                  ></a
+                ><span>17</span><span class="text-green">10</span><span>4</span
+                ><span class="text-red">3</span><span>42</span><span>27</span
+                ><span>16</span><span class="title--20">62</span>
+              </div>
+              <div class="table__body grid-pts-tbl">
+                <span class="t2je5puh">10.</span
+                ><a href="#" class="link-reset table__team_block hover-text"
+                  ><img class="logo--30" src="/images/arsenal.png" /><span
+                    >arsenal</span
+                  ></a
+                ><span>17</span><span class="text-green">10</span><span>4</span
+                ><span class="text-red">3</span><span>42</span><span>27</span
+                ><span>16</span><span class="title--20">60</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="results__section mb-50">
+        </section>
+        <section class="results__section section">
           <div class="container">
-            <div class="title__block"><img src="/images/58fddc8e0951782199d971229c9a0382.png" class="logo-70" />
+            <div class="title__block">
+              <img
+                src="/images/58fddc8e0951782199d971229c9a0382.png"
+                class="title__block_logo"
+              />
               <h2 class="title mb-reset">latest results</h2>
             </div>
-            <div class="rows-20 grid-cols-2">
-              <div>
-                <div class="res__content">
-                  <div class="res__head flx-btwn"><span>matchday 31</span><span>27.04.2025</span></div>
-                  <div class="res__item"><a href="#" class="hover-text link-reset res__team_block flx-btwn"><span>chelsea</span><img class="logo-50" src="/images/4c0fabb0562e69837ff5a57448f36a2e.png" /><span class="win">win</span></a>
-                    <p class="title-26 mb-reset">2 : 0</p><a href="#" class="hover-text link-reset res__team_block flx-btwn"><img class="logo-50" src="/images/572cef089f2866c8f796e3221c94682f.png" /><span>brentford</span></a>
-                    <div class="res__link_block"><a href="#" class="link-reset link__btn">match center</a></div>
+            <div class="results__rows">
+              <div class="res__content">
+                <div class="res__head">
+                  <div class="res-head__info">
+                    <span>matchday 31</span><span>27.04.2025</span>
                   </div>
-                  <div class="res__item"><a href="#" class="hover-text link-reset res__team_block flx-btwn"><span>arsenal</span><img class="logo-50" src="/images/78ba41add1f464050ac6c355cc9ecc2a.png" /></a>
-                    <p class="title-26 mb-reset">1 : 2</p><a href="#" class="hover-text link-reset res__team_block flx-btwn"><img class="logo-50" src="/images/de92eb6527e467edd83a0b77de7a243f.png" /><span>brighton </span><span class="win win--right">win</span></a>
-                    <div class="res__link_block"><a href="#" class="link-reset link__btn">match center</a></div>
+                  <div class="res-head__icon">
+                    <img src="./images/snape.png" alt="snape" />
                   </div>
-                  <div class="res__item"><a href="#" class="hover-text link-reset res__team_block flx-btwn"><span>m. city</span><img class="logo-50" src="/images/0ab23b908a4c1e72fa3d64d5825ebb75.png" /><span class="win">win</span></a>
-                    <p class="title-26 mb-reset">3 : 1</p><a href="#" class="hover-text link-reset res__team_block flx-btwn"><img class="logo-50" src="/images/50afa9beb13e8d213a97fea2e0dfe5ba.png" /><span>newcastle</span></a>
-                    <div class="res__link_block"><a href="#" class="link-reset link__btn">match center</a></div>
+                </div>
+                <div class="res__item">
+                  <a
+                    href="#"
+                    class="hover-text link-reset res__team_block res__team_block--reverse"
+                  >
+                    <span>chelsea</span>
+                    <img class="res__team_logo" src="/images/chelsea.png" />
+                    <span class="win win--left">win</span>
+                  </a>
+                  <p class="title-26 mb-reset">2 : 0</p>
+                  <a href="#" class="hover-text link-reset res__team_block">
+                    <img class="res__team_logo" src="/images/brentford.png" />
+                    <span>brentford</span></a
+                  >
+                  <div class="res__link_block">
+                    <a href="#" class="link-reset link__btn">match center</a>
+                  </div>
+                </div>
+                <div class="res__item">
+                  <a
+                    href="#"
+                    class="hover-text link-reset res__team_block res__team_block--reverse"
+                  >
+                    <span>arsenal</span
+                    ><img class="res__team_logo" src="/images/arsenal.png" />
+                  </a>
+                  <p class="title-26 mb-reset">1 : 2</p>
+                  <a href="#" class="hover-text link-reset res__team_block">
+                    <img class="res__team_logo" src="/images/brighton.png" />
+                    <span>brighton </span>
+                    <span class="win win--right">win</span></a
+                  >
+                  <div class="res__link_block">
+                    <a href="#" class="link-reset link__btn">match center</a>
+                  </div>
+                </div>
+                <div class="res__item">
+                  <a
+                    href="#"
+                    class="hover-text link-reset res__team_block res__team_block--reverse"
+                  >
+                    <span>m. city</span>
+                    <img class="res__team_logo" src="/images/man-city.png" />
+                    <span class="win win--left">win</span></a
+                  >
+                  <p class="title-26 mb-reset">3 : 1</p>
+                  <a
+                    href="#"
+                    class="hover-text link-reset res__team_block flx-btwn"
+                  >
+                    <img class="res__team_logo" src="/images/newcastle.png" />
+                    <span>newcastle</span>
+                  </a>
+                  <div class="res__link_block">
+                    <a href="#" class="link-reset link__btn">match center</a>
+                  </div>
+                </div>
+                <div class="res__item">
+                  <a
+                    href="#"
+                    class="hover-text link-reset res__team_block res__team_block--reverse"
+                  >
+                    <span>liverpool</span>
+                    <img class="res__team_logo" src="/images/liver.png" />
+                  </a>
+                  <p class="title-26 mb-reset">0 : 3</p>
+                  <a
+                    href="#"
+                    class="hover-text link-reset res__team_block flx-btwn"
+                  >
+                    <img class="res__team_logo" src="/images/wolver.png" />
+                    <span>wolver</span>
+                    <span class="win win--right">win</span>
+                  </a>
+                  <div class="res__link_block">
+                    <a href="#" class="link-reset link__btn">match center</a>
                   </div>
                 </div>
               </div>
-              <div>
-                <div class="res__content">
-                  <div class="res__head flx-btwn"><span>matchday 31</span><span>28.04.2025</span></div>
-                  <div class="res__item"><a href="#" class="hover-text link-reset res__team_block flx-btwn"><span>m. city</span><img class="logo-50" src="/images/0ab23b908a4c1e72fa3d64d5825ebb75.png" /><span class="win">win</span></a>
-                    <p class="title-26 mb-reset">3 : 1</p><a href="#" class="hover-text link-reset res__team_block flx-btwn"><img class="logo-50" src="/images/50afa9beb13e8d213a97fea2e0dfe5ba.png" /><span>newcastle</span></a>
-                    <div class="res__link_block"><a href="#" class="link-reset link__btn">match center</a></div>
+              <div class="res__content">
+                <div class="res__head">
+                  <div class="res-head__info">
+                    <span>matchday 31</span><span>27.04.2025</span>
                   </div>
-                  <div class="res__item"><a href="#" class="hover-text link-reset res__team_block flx-btwn"><span>liverpool</span><img class="logo-50" src="/images/59cff6fb7f43b02a67d29f24196673d6.png" /></a>
-                    <p class="title-26 mb-reset">0 : 3</p><a href="#" class="hover-text link-reset res__team_block flx-btwn"><img class="logo-50" src="/images/3a3aa54b7ab512052ebdc6469e7d90ea.png" /><span>wolver</span><span class="win win--right">win</span></a>
-                    <div class="res__link_block"><a href="#" class="link-reset link__btn">match center</a></div>
+                  <div class="res-head__icon">
+                    <img src="./images/snape.png" alt="snape" />
                   </div>
-                  <div class="res__item"><a href="#" class="hover-text link-reset res__team_block flx-btwn"><span>chelsea</span><img class="logo-50" src="/images/4c0fabb0562e69837ff5a57448f36a2e.png" /><span class="win">win</span></a>
-                    <p class="title-26 mb-reset">2 : 0</p><a href="#" class="hover-text link-reset res__team_block flx-btwn"><img class="logo-50" src="/images/572cef089f2866c8f796e3221c94682f.png" /><span>brentford</span></a>
-                    <div class="res__link_block"><a href="#" class="link-reset link__btn">match center</a></div>
+                </div>
+                <div class="res__item">
+                  <a
+                    href="#"
+                    class="hover-text link-reset res__team_block res__team_block--reverse"
+                  >
+                    <span>chelsea</span>
+                    <img class="res__team_logo" src="/images/chelsea.png" />
+                    <span class="win win--left">win</span>
+                  </a>
+                  <p class="title-26 mb-reset">2 : 0</p>
+                  <a href="#" class="hover-text link-reset res__team_block">
+                    <img class="res__team_logo" src="/images/brentford.png" />
+                    <span>brentford</span></a
+                  >
+                  <div class="res__link_block">
+                    <a href="#" class="link-reset link__btn">match center</a>
+                  </div>
+                </div>
+                <div class="res__item">
+                  <a
+                    href="#"
+                    class="hover-text link-reset res__team_block res__team_block--reverse"
+                  >
+                    <span>arsenal</span
+                    ><img class="res__team_logo" src="/images/arsenal.png" />
+                  </a>
+                  <p class="title-26 mb-reset">1 : 2</p>
+                  <a href="#" class="hover-text link-reset res__team_block">
+                    <img class="res__team_logo" src="/images/brighton.png" />
+                    <span>brighton </span>
+                    <span class="win win--right">win</span></a
+                  >
+                  <div class="res__link_block">
+                    <a href="#" class="link-reset link__btn">match center</a>
+                  </div>
+                </div>
+                <div class="res__item">
+                  <a
+                    href="#"
+                    class="hover-text link-reset res__team_block res__team_block--reverse"
+                  >
+                    <span>m. city</span>
+                    <img class="res__team_logo" src="/images/man-city.png" />
+                    <span class="win win--left">win</span></a
+                  >
+                  <p class="title-26 mb-reset">3 : 1</p>
+                  <a
+                    href="#"
+                    class="hover-text link-reset res__team_block flx-btwn"
+                  >
+                    <img class="res__team_logo" src="/images/newcastle.png" />
+                    <span>newcastle</span>
+                  </a>
+                  <div class="res__link_block">
+                    <a href="#" class="link-reset link__btn">match center</a>
+                  </div>
+                </div>
+                <div class="res__item">
+                  <a
+                    href="#"
+                    class="hover-text link-reset res__team_block res__team_block--reverse"
+                  >
+                    <span>liverpool</span>
+                    <img class="res__team_logo" src="/images/liver.png" />
+                  </a>
+                  <p class="title-26 mb-reset">0 : 3</p>
+                  <a
+                    href="#"
+                    class="hover-text link-reset res__team_block flx-btwn"
+                  >
+                    <img class="res__team_logo" src="/images/wolver.png" />
+                    <span>wolver</span>
+                    <span class="win win--right">win</span>
+                  </a>
+                  <div class="res__link_block">
+                    <a href="#" class="link-reset link__btn">match center</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="news__section mb-50">
+        </section>
+        <section class="news__section section">
           <div class="container">
-            <div class="title__block"><img src="/images/58fddc8e0951782199d971229c9a0382.png" class="logo-70" />
-              <h2 class="title mb-reset">team news</h2>
+            <div class="title__block">
+              <img
+                src="/images/58fddc8e0951782199d971229c9a0382.png"
+                class="title__block_logo"
+              />
+              <h2 class="title mb-reset">club news</h2>
             </div>
-            <div class="rows-20 grid-cols-4"><a href="#" class="link-reset media__item text--hover">
-                <div class="image-block pb-60pcr"><img class="media__img ibg" src="/images/270afc6417aca28dd116eb431794aaaf.webp" /></div>
-                <div class="media__text_block flx-clmn">
-                  <p class="media__subtitle mb-reset">news</p>
-                  <h3 class="mb-reset title--22">Slot: My family made sacrifices, but title made it worthwhile
-                  </h3>
-                  <p class="mb-reset text--violet">Manchester City kept alive their last chance of silverware in 2024/25 by beating Nottingham Forest to set up an FA Cup final against Crystal Palace.</p>
+            <div class="swiper custom__swiper">
+              <div class="swiper-wrapper swiper__body">
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__card">
+                    <a href="#" class="link-reset media__item text--hover">
+                      <div class="image-block news__card_img-block">
+                        <img
+                          class="media__img ibg"
+                          src="/images/270afc6417aca28dd116eb431794aaaf.webp"
+                        />
+                      </div>
+                      <div class="media__text_block flx-clmn">
+                        <p class="media__subtitle mb-reset">news</p>
+                        <h3 class="mb-reset title--22">
+                          Slot: My family made sacrifices expression
+                        </h3>
+                        <p class="news__description">
+                          Manchester City kept alive their last chance of
+                          silverware in 2024/25 by beating Nottingham Forest to
+                          set up an FA Cup final against Crystal Palace.
+                        </p>
+                      </div>
+                    </a>
+                  </article>
                 </div>
-              </a><a href="#" class="link-reset media__item text--hover">
-                <div class="image-block pb-60pcr"><img class="media__img ibg" src="/images/fa5050c091146164f75386415c183987.webp" /></div>
-                <div class="media__text_block flx-clmn">
-                  <p class="media__subtitle mb-reset">featured</p>
-                  <h3 class="mb-reset title--22">FPL GW34 stats: Cunha delivers as managers Free-Hit</h3>
-                  <p class="mb-reset text--violet"> Adrian Clarke looks at Liverpools right-back options ahead of their potential title-clinching match against Spurs last game</p>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__card">
+                    <a href="#" class="link-reset media__item text--hover">
+                      <div class="image-block news__card_img-block">
+                        <img
+                          class="media__img ibg"
+                          src="/images/fa5050c091146164f75386415c183987.webp"
+                        />
+                      </div>
+                      <div class="media__text_block flx-clmn">
+                        <p class="media__subtitle mb-reset">featured</p>
+                        <h3 class="mb-reset title--22">
+                          FPL GW34 stats: Cunha delivers as managers Free-Hit
+                        </h3>
+                        <p class="news__description">
+                          Adrian Clarke looks at Liverpools right-back options
+                          ahead of their potential title-clinching match against
+                          Spurs last game
+                        </p>
+                      </div>
+                    </a>
+                  </article>
                 </div>
-              </a><a href="#" class="link-reset media__item text--hover">
-                <div class="image-block pb-60pcr"><img class="media__img ibg" src="/images/4c7f3f00bfa7bf700f188e604fb9185a.webp" /></div>
-                <div class="media__text_block flx-clmn">
-                  <p class="media__subtitle mb-reset">interview</p>
-                  <h3 class="mb-reset title--22">Aston Villa v Forest: Watch Martinez wonder save in reverse fixture
-                  </h3>
-                  <p class="mb-reset text--violet"> Egyptians 4.2 million backers hope he can outscore Newcastle striker, who only produced six points in Blank Gameweek 34 </p>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__card">
+                    <a href="#" class="link-reset media__item text--hover">
+                      <div class="image-block news__card_img-block">
+                        <img
+                          class="media__img ibg"
+                          src="/images/4c7f3f00bfa7bf700f188e604fb9185a.webp"
+                        />
+                      </div>
+                      <div class="media__text_block flx-clmn">
+                        <p class="media__subtitle mb-reset">interview</p>
+                        <h3 class="mb-reset title--22">
+                          Aston Villa v Forest: Watch Martinez wonder save
+                        </h3>
+                        <p class="news__description">
+                          Egyptians 4.2 million backers hope he can outscore
+                          Newcastle striker, who only produced six points in
+                          Blank Gameweek 34
+                        </p>
+                      </div>
+                    </a>
+                  </article>
                 </div>
-              </a><a href="#" class="link-reset media__item text--hover">
-                <div class="image-block pb-60pcr"><img class="media__img ibg" src="/images/167f5afba6a4c1856c9050519d5e23cf.webp" /></div>
-                <div class="media__text_block flx-clmn">
-                  <p class="media__subtitle mb-reset">news</p>
-                  <h3 class="mb-reset title--22">Slot pays tribute to Klopp after Liverpool title win after match</h3>
-                  <p class="mb-reset text--violet"> The FA, Premier League and EFL remind fans to act responsibly and play their part in making football a positive experience for all </p>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__card">
+                    <a href="#" class="link-reset media__item text--hover">
+                      <div class="image-block news__card_img-block">
+                        <img
+                          class="media__img ibg"
+                          src="/images/167f5afba6a4c1856c9050519d5e23cf.webp"
+                        />
+                      </div>
+                      <div class="media__text_block flx-clmn">
+                        <p class="media__subtitle mb-reset">news</p>
+                        <h3 class="mb-reset title--22">
+                          Slot pays tribute to Klopp after Liverpool title win
+                          after match
+                        </h3>
+                        <p class="news__description">
+                          The FA, Premier League and EFL remind fans to act
+                          responsibly and play their part in making football a
+                          positive experience for all
+                        </p>
+                      </div>
+                    </a>
+                  </article>
                 </div>
-              </a></div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__card">
+                    <a href="#" class="link-reset media__item text--hover">
+                      <div class="image-block news__card_img-block">
+                        <img
+                          class="media__img ibg"
+                          src="/images/270afc6417aca28dd116eb431794aaaf.webp"
+                        />
+                      </div>
+                      <div class="media__text_block flx-clmn">
+                        <p class="media__subtitle mb-reset">news</p>
+                        <h3 class="mb-reset title--22">
+                          Slot: My family made sacrifices expression
+                        </h3>
+                        <p class="news__description">
+                          Manchester City kept alive their last chance of
+                          silverware in 2024/25 by beating Nottingham Forest to
+                          set up an FA Cup final against Crystal Palace.
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__card">
+                    <a href="#" class="link-reset media__item text--hover">
+                      <div class="image-block news__card_img-block">
+                        <img
+                          class="media__img ibg"
+                          src="/images/fa5050c091146164f75386415c183987.webp"
+                        />
+                      </div>
+                      <div class="media__text_block flx-clmn">
+                        <p class="media__subtitle mb-reset">featured</p>
+                        <h3 class="mb-reset title--22">
+                          FPL GW34 stats: Cunha delivers as managers Free-Hit
+                        </h3>
+                        <p class="news__description">
+                          Adrian Clarke looks at Liverpools right-back options
+                          ahead of their potential title-clinching match against
+                          Spurs last game
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__card">
+                    <a href="#" class="link-reset media__item text--hover">
+                      <div class="image-block news__card_img-block">
+                        <img
+                          class="media__img ibg"
+                          src="/images/4c7f3f00bfa7bf700f188e604fb9185a.webp"
+                        />
+                      </div>
+                      <div class="media__text_block flx-clmn">
+                        <p class="media__subtitle mb-reset">interview</p>
+                        <h3 class="mb-reset title--22">
+                          Aston Villa v Forest: Watch Martinez wonder save
+                        </h3>
+                        <p class="news__description">
+                          Egyptians 4.2 million backers hope he can outscore
+                          Newcastle striker, who only produced six points in
+                          Blank Gameweek 34
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__card">
+                    <a href="#" class="link-reset media__item text--hover">
+                      <div class="image-block news__card_img-block">
+                        <img
+                          class="media__img ibg"
+                          src="/images/167f5afba6a4c1856c9050519d5e23cf.webp"
+                        />
+                      </div>
+                      <div class="media__text_block flx-clmn">
+                        <p class="media__subtitle mb-reset">news</p>
+                        <h3 class="mb-reset title--22">
+                          Slot pays tribute to Klopp after Liverpool title win
+                          after match
+                        </h3>
+                        <p class="news__description">
+                          The FA, Premier League and EFL remind fans to act
+                          responsibly and play their part in making football a
+                          positive experience for all
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+              <div class="swiper__pagination"></div>
+              <div class="swiper__buttons">
+                <div class="swiper-button-prev custom__buttom_prev"></div>
+                <div class="swiper-button-next custom__buttom_next"></div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="video__section mb-50">
+        </section>
+        <section class="video__section section">
           <div class="container">
-            <div class="title__block"><img src="/images/58fddc8e0951782199d971229c9a0382.png" class="logo-70" />
-              <h2 class="title mb-reset">team video</h2>
+            <div class="title__block">
+              <img
+                src="/images/58fddc8e0951782199d971229c9a0382.png"
+                class="title__block_logo"
+              />
+              <h2 class="title mb-reset">club video</h2>
             </div>
-            <div class="media__cards grid-cols-3"><a href="#" class="link-reset media__item text--hover">
-                <div class="image-block pb-60pcr"><img class="media__img ibg" src="/images/c30e105c73b389e4e92855d6cfca52b5.webp" />
-                  <div class="play__icon_block text--hover"><img class="play__icon" src="/images/536a3d967c67001edd112a308d3fa6f7.png" /><span>02:07</span></div>
+            <div class="swiper custom__swiper">
+              <div class="swiper-wrapper swiper__body">
+                <div class="swiper-slide custom__swiper_slide">
+                  <article>
+                    <a href="#" class="link-reset media__item text--hover">
+                      <div class="image-block video__item_img-block">
+                        <img
+                          class="media__img ibg"
+                          src="/images/270afc6417aca28dd116eb431794aaaf.webp"
+                        />
+                        <div class="play__icon_block">
+                          <svg
+                            class="play__icon"
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 330 330"
+                            xml:space="preserve"
+                            stroke-width="1"
+                          >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                              id="SVGRepo_tracerCarrier"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                              <path
+                                id="XMLID_497_"
+                                d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                              ></path>
+                            </g>
+                          </svg>
+                          <span>06:12</span>
+                        </div>
+                      </div>
+                      <div class="media__text_block flx-clmn">
+                        <p class="media__subtitle mb-reset">video</p>
+                        <h3 class="mb-reset video__item_title">
+                          Slot: My family made sacrifices, but title made it
+                          worthwhile
+                        </h3>
+                      </div>
+                    </a>
+                  </article>
                 </div>
-                <div class="media__text_block flx-clmn">
-                  <p class="media__subtitle mb-reset">video</p>
-                  <h3 class="mb-reset title--22">Slot: My family made sacrifices, but title made it worthwhile
-                  </h3>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article>
+                    <a href="#" class="link-reset media__item text--hover">
+                      <div class="image-block video__item_img-block">
+                        <img
+                          class="media__img ibg"
+                          src="/images/92f92111f5367dcafa65e4b01b504624.webp"
+                        />
+                        <div class="play__icon_block">
+                          <svg
+                            class="play__icon"
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 330 330"
+                            xml:space="preserve"
+                            stroke-width="1"
+                          >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                              id="SVGRepo_tracerCarrier"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                              <path
+                                id="XMLID_497_"
+                                d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                              ></path>
+                            </g>
+                          </svg>
+                          <span>02:38</span>
+                        </div>
+                      </div>
+                      <div class="media__text_block flx-clmn">
+                        <p class="media__subtitle mb-reset">video</p>
+                        <h3 class="mb-reset video__item_title">
+                          watch the best goals in match manchester city vs
+                          liverpool
+                        </h3>
+                      </div>
+                    </a>
+                  </article>
                 </div>
-              </a><a href="#" class="link-reset media__item text--hover">
-                <div class="image-block pb-60pcr"><img class="media__img ibg" src="/images/c5836f01547ba2a5ce4a9556aa5d9dec.webp" />
-                  <div class="play__icon_block text--hover"><img class="play__icon" src="/images/536a3d967c67001edd112a308d3fa6f7.png" /><span>03:15</span></div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article>
+                    <a href="#" class="link-reset media__item text--hover">
+                      <div class="image-block video__item_img-block">
+                        <img
+                          class="media__img ibg"
+                          src="/images/4c7f3f00bfa7bf700f188e604fb9185a.webp"
+                        />
+                        <div class="play__icon_block">
+                          <svg
+                            class="play__icon"
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 330 330"
+                            xml:space="preserve"
+                            stroke-width="1"
+                          >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                              id="SVGRepo_tracerCarrier"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                              <path
+                                id="XMLID_497_"
+                                d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                              ></path>
+                            </g>
+                          </svg>
+                          <span>09:42</span>
+                        </div>
+                      </div>
+                      <div class="media__text_block flx-clmn">
+                        <p class="media__subtitle mb-reset">video</p>
+                        <h3 class="mb-reset video__item_title">
+                          Aston Villa v Forest: Watch Martinez wonder save in
+                          reverse fixture
+                        </h3>
+                      </div>
+                    </a>
+                  </article>
                 </div>
-                <div class="media__text_block flx-clmn">
-                  <p class="media__subtitle mb-reset">video</p>
-                  <h3 class="mb-reset title--22">watch the best goals in match manchester city vs liverpool</h3>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article>
+                    <a href="#" class="link-reset media__item text--hover">
+                      <div class="image-block video__item_img-block">
+                        <img
+                          class="media__img ibg"
+                          src="/images/fa5050c091146164f75386415c183987.webp"
+                        />
+                        <div class="play__icon_block">
+                          <svg
+                            class="play__icon"
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 330 330"
+                            xml:space="preserve"
+                            stroke-width="1"
+                          >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                              id="SVGRepo_tracerCarrier"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                              <path
+                                id="XMLID_497_"
+                                d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                              ></path>
+                            </g>
+                          </svg>
+                          <span>06:12</span>
+                        </div>
+                      </div>
+                      <div class="media__text_block flx-clmn">
+                        <p class="media__subtitle mb-reset">video</p>
+                        <h3 class="mb-reset video__item_title">
+                          Slot: My family made sacrifices, but title made it
+                          worthwhile
+                        </h3>
+                      </div>
+                    </a>
+                  </article>
                 </div>
-              </a><a href="#" class="link-reset media__item text--hover">
-                <div class="image-block pb-60pcr"><img class="media__img ibg" src="/images/4c7f3f00bfa7bf700f188e604fb9185a.webp" />
-                  <div class="play__icon_block text--hover"><img class="play__icon" src="/images/536a3d967c67001edd112a308d3fa6f7.png" /><span>04:47</span></div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article>
+                    <a href="#" class="link-reset media__item text--hover">
+                      <div class="image-block video__item_img-block">
+                        <img
+                          class="media__img ibg"
+                          src="/images/92f92111f5367dcafa65e4b01b504624.webp"
+                        />
+                        <div class="play__icon_block">
+                          <svg
+                            class="play__icon"
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 330 330"
+                            xml:space="preserve"
+                            stroke-width="1"
+                          >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                              id="SVGRepo_tracerCarrier"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                              <path
+                                id="XMLID_497_"
+                                d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                              ></path>
+                            </g>
+                          </svg>
+                          <span>02:38</span>
+                        </div>
+                      </div>
+                      <div class="media__text_block flx-clmn">
+                        <p class="media__subtitle mb-reset">video</p>
+                        <h3 class="mb-reset video__item_title">
+                          watch the best goals in match manchester city vs
+                          liverpool
+                        </h3>
+                      </div>
+                    </a>
+                  </article>
                 </div>
-                <div class="media__text_block flx-clmn">
-                  <p class="media__subtitle mb-reset">video</p>
-                  <h3 class="mb-reset title--22">Aston Villa v Forest: Watch Martinez wonder save in reverse fixture
-                  </h3>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article>
+                    <a href="#" class="link-reset media__item text--hover">
+                      <div class="image-block video__item_img-block">
+                        <img
+                          class="media__img ibg"
+                          src="/images/270afc6417aca28dd116eb431794aaaf.webp"
+                        />
+                        <div class="play__icon_block">
+                          <svg
+                            class="play__icon"
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 330 330"
+                            xml:space="preserve"
+                            stroke-width="1"
+                          >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                              id="SVGRepo_tracerCarrier"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                              <path
+                                id="XMLID_497_"
+                                d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                              ></path>
+                            </g>
+                          </svg>
+                          <span>06:12</span>
+                        </div>
+                      </div>
+                      <div class="media__text_block flx-clmn">
+                        <p class="media__subtitle mb-reset">video</p>
+                        <h3 class="mb-reset video__item_title">
+                          Slot: My family made sacrifices, but title made it
+                          worthwhile
+                        </h3>
+                      </div>
+                    </a>
+                  </article>
                 </div>
-              </a></div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article>
+                    <a href="#" class="link-reset media__item text--hover">
+                      <div class="image-block video__item_img-block">
+                        <img
+                          class="media__img ibg"
+                          src="/images/92f92111f5367dcafa65e4b01b504624.webp"
+                        />
+                        <div class="play__icon_block">
+                          <svg
+                            class="play__icon"
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 330 330"
+                            xml:space="preserve"
+                            stroke-width="1"
+                          >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                              id="SVGRepo_tracerCarrier"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                              <path
+                                id="XMLID_497_"
+                                d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                              ></path>
+                            </g>
+                          </svg>
+                          <span>02:38</span>
+                        </div>
+                      </div>
+                      <div class="media__text_block flx-clmn">
+                        <p class="media__subtitle mb-reset">video</p>
+                        <h3 class="mb-reset video__item_title">
+                          watch the best goals in match manchester city vs
+                          liverpool
+                        </h3>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article>
+                    <a href="#" class="link-reset media__item text--hover">
+                      <div class="image-block video__item_img-block">
+                        <img
+                          class="media__img ibg"
+                          src="/images/4c7f3f00bfa7bf700f188e604fb9185a.webp"
+                        />
+                        <div class="play__icon_block">
+                          <svg
+                            class="play__icon"
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 330 330"
+                            xml:space="preserve"
+                            stroke-width="1"
+                          >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                              id="SVGRepo_tracerCarrier"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                              <path
+                                id="XMLID_497_"
+                                d="M292.95,152.281L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4C32.959,4.524,30,9.547,30,15v300 c0,5.453,2.959,10.476,7.728,13.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999 c4.386-2.741,7.05-7.548,7.05-12.72C300,159.829,297.336,155.022,292.95,152.281z M60,287.936V42.064l196.698,122.937L60,287.936z"
+                              ></path>
+                            </g>
+                          </svg>
+                          <span>09:42</span>
+                        </div>
+                      </div>
+                      <div class="media__text_block flx-clmn">
+                        <p class="media__subtitle mb-reset">video</p>
+                        <h3 class="mb-reset video__item_title">
+                          Aston Villa v Forest: Watch Martinez wonder save in
+                          reverse fixture
+                        </h3>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+              <div class="swiper__pagination"></div>
+              <div class="swiper__buttons">
+                <div class="swiper-button-prev custom__buttom_prev"></div>
+                <div class="swiper-button-next custom__buttom_next"></div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="footer">
+        </section>
+      </main>
+      <footer class="footer">
         <div class="container">
-          <div class="footer__nav flx-btwn">
+          <div class="footer__nav">
             <div class="footer-nav__item">
               <div class="footer-nav__title_block">
                 <h3 class="title-26 mb-reset">premier league</h3>
               </div>
-              <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer-nav__link">home</a><a href="#" class="hover-text link-reset footer-nav__link">fixtures</a><a href="#" class="hover-text link-reset footer-nav__link">Results</a><a href="#" class="hover-text link-reset footer-nav__link">Tables</a><a href="#" class="hover-text link-reset footer-nav__link">Stats</a></div>
+              <div class="footer-nav__links flx-clmn">
+                <a href="#" class="footer-nav__link">home</a
+                ><a href="#" class="footer-nav__link">fixtures</a
+                ><a href="#" class="footer-nav__link">Results</a
+                ><a href="#" class="footer-nav__link">Tables</a
+                ><a href="#" class="footer-nav__link">Stats</a>
+              </div>
             </div>
             <div class="footer-nav__item">
               <div class="footer-nav__title_block">
                 <h3 class="title-26 mb-reset">Community</h3>
               </div>
-              <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer-nav__link">Wider Football</a><a href="#" class="hover-text link-reset footer-nav__link">PL Charitable Fund</a><a href="#" class="hover-text link-reset footer-nav__link">Community</a><a href="#" class="hover-text link-reset footer-nav__link">Youth Development</a><a href="#" class="hover-text link-reset footer-nav__link">No Room for Racism</a></div>
+              <div class="footer-nav__links flx-clmn">
+                <a href="#" class="footer-nav__link">Wider Football</a
+                ><a href="#" class="footer-nav__link">PL Charitable Fund</a
+                ><a href="#" class="footer-nav__link">Community</a
+                ><a href="#" class="footer-nav__link">Youth Development</a
+                ><a href="#" class="footer-nav__link">No Room for Racism</a>
+              </div>
             </div>
             <div class="footer-nav__item">
               <div class="footer-nav__title_block">
                 <h3 class="title-26 mb-reset">about</h3>
               </div>
-              <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer-nav__link">Overview</a><a href="#" class="hover-text link-reset footer-nav__link">What we do</a><a href="#" class="hover-text link-reset footer-nav__link">Governance</a><a href="#" class="hover-text link-reset footer-nav__link">Statement of Principles</a><a href="#" class="hover-text link-reset footer-nav__link">Inclusion</a></div>
+              <div class="footer-nav__links flx-clmn">
+                <a href="#" class="footer-nav__link">Overview</a
+                ><a href="#" class="footer-nav__link">What we do</a
+                ><a href="#" class="footer-nav__link">Governance</a
+                ><a href="#" class="footer-nav__link">Statement of Principles</a
+                ><a href="#" class="footer-nav__link">Inclusion</a>
+              </div>
             </div>
             <div class="footer-nav__item">
               <div class="footer-nav__title_block">
                 <h3 class="title-26 mb-reset">stats</h3>
               </div>
-              <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer-nav__link">Milestones</a><a href="#" class="hover-text link-reset footer-nav__link">All-time Stats</a><a href="#" class="hover-text link-reset footer-nav__link">Club Stats</a><a href="#" class="hover-text link-reset footer-nav__link">Player Stats</a><a href="#" class="hover-text link-reset footer-nav__link">Dashboard</a></div>
+              <div class="footer-nav__links flx-clmn">
+                <a href="#" class="footer-nav__link">Milestones</a
+                ><a href="#" class="footer-nav__link">All-time Stats</a
+                ><a href="#" class="footer-nav__link">Club Stats</a
+                ><a href="#" class="footer-nav__link">Player Stats</a
+                ><a href="#" class="footer-nav__link">Dashboard</a>
+              </div>
             </div>
             <div class="footer-nav__item">
               <div class="footer-nav__title_block">
                 <h3 class="title-26 mb-reset">more</h3>
               </div>
-              <div class="footer-nav__links flx-clmn"><a href="#" class="hover-text link-reset footer-nav__link">History</a><a href="#" class="hover-text link-reset footer-nav__link">Hall of Fame</a><a href="#" class="hover-text link-reset footer-nav__link">PL30</a><a href="#" class="hover-text link-reset footer-nav__link">Referees</a><a href="#" class="hover-text link-reset footer-nav__link">Milestones</a></div>
+              <div class="footer-nav__links flx-clmn">
+                <a href="#" class="footer-nav__link">History</a
+                ><a href="#" class="footer-nav__link">Hall of Fame</a
+                ><a href="#" class="footer-nav__link">PL30</a
+                ><a href="#" class="footer-nav__link">Referees</a
+                ><a href="#" class="footer-nav__link">Milestones</a>
+              </div>
             </div>
           </div>
           <div class="footer__btm">
-            <p class="mb-reset">© 2025 – premier-league.pt. All Rights Reserved</p>
+            <p class="mb-reset">
+              © 2025 – premier-league.pt. All Rights Reserved
+            </p>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/js/swiper.js"></script>
+    <script type="module" src="/js/menuBurger.js"></script>
+    <script type="module" src="/js/spoiler.js"></script>
   </body>
-
 </html>
