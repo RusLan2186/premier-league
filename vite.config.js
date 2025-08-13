@@ -3,15 +3,14 @@ import path from 'path'
 import fs from 'fs'
 import { fileURLToPath } from 'url'
 import viteImagemin from 'vite-plugin-imagemin'
+import postcssPxToRem from 'postcss-pxtorem'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-/**
- * Рекурсивно ищем все HTML в src
- */
+// Рекурсивно ищем HTML-файлы в src
 function getHtmlInputs() {
-  const srcDir = path.resolve(__dirname, 'src') // ищем во всей src
+  const srcDir = path.resolve(__dirname, 'src')
   const files = []
 
   function walk(dir) {
@@ -30,7 +29,6 @@ function getHtmlInputs() {
 
   const input = {}
   files.forEach(f => {
-    // Относительный путь от src, заменяем \ на /
     const rel = path.relative(srcDir, f).replace(/\\/g, '/')
     const key = rel.replace(/\.html$/, '')
     input[key] = f
@@ -39,14 +37,25 @@ function getHtmlInputs() {
   return input
 }
 
-export default defineConfig({
-  root: 'src',        // dev сервер работает из src
-  base: './',         // относительные пути
+export default defineConfig(({ command }) => ({
+  root: 'src',
+  base: './',
   build: {
-    outDir: '../dist', // билд в корневую dist
+    outDir: '../dist',
     emptyOutDir: true,
     rollupOptions: {
       input: getHtmlInputs()
+    }
+  },
+  css: {
+    postcss: {
+      plugins: command === 'build' ? [
+        postcssPxToRem({
+          rootValue: 16, // 1rem = 16px
+          propList: ['*'], // конвертировать все свойства
+          replace: true,
+        })
+      ] : []
     }
   },
   plugins: [
@@ -63,4 +72,4 @@ export default defineConfig({
       }
     })
   ]
-})
+}))
