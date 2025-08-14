@@ -8,7 +8,7 @@ import postcssPxToRem from 'postcss-pxtorem'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-// Рекурсивно ищем HTML-файлы в dev
+// Находим все HTML в папке dev
 function getHtmlInputs() {
   const devDir = path.resolve(__dirname, 'dev')
   const files = []
@@ -17,11 +17,8 @@ function getHtmlInputs() {
     for (const name of fs.readdirSync(dir)) {
       const fullPath = path.join(dir, name)
       const stat = fs.statSync(fullPath)
-      if (stat.isDirectory()) {
-        walk(fullPath)
-      } else if (name.toLowerCase().endsWith('.html')) {
-        files.push(fullPath)
-      }
+      if (stat.isDirectory()) walk(fullPath)
+      else if (name.toLowerCase().endsWith('.html')) files.push(fullPath)
     }
   }
 
@@ -38,10 +35,10 @@ function getHtmlInputs() {
 }
 
 export default defineConfig(({ command }) => ({
-  root: 'dev',      // папка для разработки
+  root: 'dev',
   base: './',
   build: {
-    outDir: '../src',  // билд сразу в src
+    outDir: '../src',
     emptyOutDir: true,
     rollupOptions: {
       input: getHtmlInputs(),
@@ -60,11 +57,7 @@ export default defineConfig(({ command }) => ({
   css: {
     postcss: {
       plugins: command === 'build' ? [
-        postcssPxToRem({
-          rootValue: 16,
-          propList: ['*'],
-          replace: true
-        })
+        postcssPxToRem({ rootValue: 16, propList: ['*'], replace: true })
       ] : []
     }
   },
@@ -74,12 +67,7 @@ export default defineConfig(({ command }) => ({
       optipng: { optimizationLevel: 7 },
       mozjpeg: { quality: 75 },
       pngquant: { quality: [0.65, 0.9], speed: 4 },
-      svgo: {
-        plugins: [
-          { name: 'removeViewBox', active: false },
-          { name: 'removeEmptyAttrs', active: false }
-        ]
-      }
+      svgo: { plugins: [{ name: 'removeViewBox', active: false }, { name: 'removeEmptyAttrs', active: false }] }
     })
   ]
 }))

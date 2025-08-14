@@ -6,8 +6,8 @@ const calendar = new FullCalendar.Calendar(calendarEl, {
     {
       start: '2025-08-04',
       extendedProps: {
-        homeLogo: '/images/arsenal.png',
-        awayLogo: '/images/man-city.png',
+        homeLogo: '/images/arsenal-DOYE_ayn.png',
+        awayLogo: '/images/man-city-B2tuz1bd.png',
         homeShort: 'ars',
         awayShort: 'man',
         time: '2 : 0',
@@ -15,45 +15,46 @@ const calendar = new FullCalendar.Calendar(calendarEl, {
       }
     },
 
-     {
-      start: '2025-08-04',
+    {
+      start: '2025-08-05',
       extendedProps: {
-        homeLogo: '/images/everton.png',
-        awayLogo: '/images/wolver.png',
-        homeShort: 'evr',
-        awayShort: 'wol',
-        time: '3 : 1',
+        homeLogo: '/images/brighton-B8hPJd2c.png',
+        awayLogo: '/images/brentford-CqikDS27.png',
+        homeShort: 'bri',
+        awayShort: 'bre',
+        time: '2 : 0',
         matchUrl: '#'
       }
     },
-      {
-      start: '2025-08-08',
+
+    {
+      start: '2025-08-12',
       extendedProps: {
-        homeLogo: '/images/arsenal.png',
-        awayLogo: '/images/man-city.png',
+        homeLogo: '/images/arsenal-DOYE_ayn.png',
+        awayLogo: '/images/man-city-B2tuz1bd.png',
         homeShort: 'ars',
         awayShort: 'man',
         time: '2 : 0',
         matchUrl: '#'
       }
     },
-
-     {
-      start: '2025-08-08',
+      {
+      start: '2025-08-12',
       extendedProps: {
-        homeLogo: '/images/everton.png',
-        awayLogo: '/images/wolver.png',
-        homeShort: 'evr',
-        awayShort: 'wol',
-        time: '3 : 1',
+        homeLogo: '/images/brighton-B8hPJd2c.png',
+        awayLogo: '/images/brentford-CqikDS27.png',
+        homeShort: 'bri',
+        awayShort: 'bre',
+        time: '2 : 0',
         matchUrl: '#'
       }
     },
-      {
+      
+       {
       start: '2025-08-17',
       extendedProps: {
-        homeLogo: '/images/arsenal.png',
-        awayLogo: '/images/man-city.png',
+        homeLogo: '/images/arsenal-DOYE_ayn.png',
+        awayLogo: '/images/man-city-B2tuz1bd.png',
         homeShort: 'ars',
         awayShort: 'man',
         time: '2 : 0',
@@ -61,53 +62,17 @@ const calendar = new FullCalendar.Calendar(calendarEl, {
       }
     },
 
-     {
-      start: '2025-08-19',
+    {
+      start: '2025-08-18',
       extendedProps: {
-        homeLogo: '/images/everton.png',
-        awayLogo: '/images/wolver.png',
-        homeShort: 'evr',
-        awayShort: 'wol',
-        time: '3 : 1',
-        matchUrl: '#'
-      }
-    },
-     
-      {
-      start: '2025-08-23',
-      extendedProps: {
-        homeLogo: '/images/arsenal.png',
-        awayLogo: '/images/man-city.png',
-        homeShort: 'ars',
-        awayShort: 'man',
+        homeLogo: '/images/brighton-B8hPJd2c.png',
+        awayLogo: '/images/brentford-CqikDS27.png',
+        homeShort: 'bri',
+        awayShort: 'bre',
         time: '2 : 0',
         matchUrl: '#'
       }
     },
-
-     {
-      start: '2025-08-23',
-      extendedProps: {
-        homeLogo: '/images/everton.png',
-        awayLogo: '/images/wolver.png',
-        homeShort: 'evr',
-        awayShort: 'wol',
-        time: '3 : 1',
-        matchUrl: '#'
-      }
-    },
-      {
-      start: '2025-08-23',
-      extendedProps: {
-        homeLogo: '/images/brighton.png',
-        awayLogo: '/images/brentford.png',
-        homeShort: 'evr',
-        awayShort: 'wol',
-        time: '3 : 1',
-        matchUrl: '#'
-      }
-    },
-   
 
   ],
   eventContent: function (arg) {
