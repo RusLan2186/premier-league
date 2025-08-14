@@ -214,8 +214,14 @@
   .table__body.grid-player-tbl > :nth-child(2) img {
     height: 1.5625rem; /* 25px */
   }
-    .grid-player-tbl.title--20 {
+  .grid-player-tbl.title--20 {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 599.98px) {
+  .overview__items {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -226,6 +232,7 @@
   .player__photo_block {
     padding-bottom: 60%;
   }
+
   .overview__items {
     grid-template-columns: 1fr 1fr;
   }
@@ -240,12 +247,12 @@
   }
 
   .grid-player-tbl {
-    width: 37.5rem; 
+    width: 37.5rem;
     grid-template-columns: 4.375rem 7.5rem repeat(8, 1fr); /* 70px, 120px */
     font-size: 0.875rem; /* 14px */
   }
 
   .table__body.grid-player-tbl > :nth-child(2) {
-    font-size: 0.8125rem; 
+    font-size: 0.8125rem;
   }
 }

@@ -8,9 +8,9 @@ import postcssPxToRem from 'postcss-pxtorem'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-// Рекурсивно ищем HTML-файлы в src
+// Рекурсивно ищем HTML-файлы в dev
 function getHtmlInputs() {
-  const srcDir = path.resolve(__dirname, 'src')
+  const devDir = path.resolve(__dirname, 'dev')
   const files = []
 
   function walk(dir) {
@@ -25,11 +25,11 @@ function getHtmlInputs() {
     }
   }
 
-  walk(srcDir)
+  walk(devDir)
 
   const input = {}
   files.forEach(f => {
-    const rel = path.relative(srcDir, f).replace(/\\/g, '/')
+    const rel = path.relative(devDir, f).replace(/\\/g, '/')
     const key = rel.replace(/\.html$/, '')
     input[key] = f
   })
@@ -38,22 +38,32 @@ function getHtmlInputs() {
 }
 
 export default defineConfig(({ command }) => ({
-  root: 'src',
+  root: 'dev',      // папка для разработки
   base: './',
   build: {
-    outDir: '../dist',
+    outDir: '../src',  // билд сразу в src
     emptyOutDir: true,
     rollupOptions: {
-      input: getHtmlInputs()
+      input: getHtmlInputs(),
+      output: {
+        entryFileNames: 'js/[name]-[hash].js',
+        chunkFileNames: 'js/[name]-[hash].js',
+        assetFileNames: ({ name }) => {
+          if (/\.(gif|jpe?g|png|svg|webp)$/i.test(name ?? '')) return 'images/[name]-[hash][extname]'
+          if (/\.css$/i.test(name ?? '')) return 'css/[name]-[hash][extname]'
+          if (/\.(woff2?|ttf|eot|otf)$/i.test(name ?? '')) return 'fonts/[name]-[hash][extname]'
+          return 'assets/[name]-[hash][extname]'
+        }
+      }
     }
   },
   css: {
     postcss: {
       plugins: command === 'build' ? [
         postcssPxToRem({
-          rootValue: 16, // 1rem = 16px
-          propList: ['*'], // конвертировать все свойства
-          replace: true,
+          rootValue: 16,
+          propList: ['*'],
+          replace: true
         })
       ] : []
     }
