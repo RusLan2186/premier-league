@@ -97,18 +97,18 @@ html {
   margin-bottom: 0;
 }
 
-.mb-50 {
+/* .mb-50 {
   margin-bottom: 50px;
-}
+} */
 
-.grid-cols-69pcr-1fr {
+/* .grid-cols-69pcr-1fr {
   display: grid;
   grid-template-columns: 69% 1fr;
-}
+} */
 
-.pb-60pcr {
+/* .pb-60pcr {
   padding-bottom: 60%;
-}
+} */
 .image-block {
   display: block;
   width: 100%;
@@ -160,17 +160,17 @@ html {
   display: flex;
   flex-direction: column;
 }
-.media__items {
+/* .media__items {
   row-gap: 10px;
-}
+} */
 .title--22 {
   font-size: 22px;
   font-weight: 700;
   text-transform: capitalize;
 }
-.pb-50pcr {
+/* .pb-50pcr {
   padding-bottom: 50%;
-}
+} */
 .h-100pcr {
   height: 100%;
 }
@@ -215,16 +215,16 @@ html {
 .logo-70 {
   height: 70px;
 }
-.media__rows {
+/* .media__rows {
   column-gap: 30px;
-}
+} */
 
-.title-link--30 {
+/* .title-link--30 {
   font-size: 30px;
   font-weight: 700;
   color: rgb(255, 255, 255);
   text-transform: capitalize;
-}
+} */
 
 .link__btn--big {
   font-size: 18px;
@@ -234,14 +234,14 @@ html {
   padding-top: 10px;
 }
 
-.media__cards {
+/* .media__cards {
   column-gap: 15px;
   row-gap: 15px;
-}
-.grid-cols-3 {
+} */
+/* .grid-cols-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
+} */
 
 .title--20 {
   font-size: 20px;
@@ -271,9 +271,9 @@ html {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.logo-40 {
+/* .logo-40 {
   height: 40px;
-}
+} */
 
 .hover-scale {
   transition: 0.3s scale;
@@ -282,10 +282,10 @@ html {
   scale: 1.1;
   transition: 0.3s scale;
 }
-.grid-cols-2 {
+/* .grid-cols-2 {
   grid-template-columns: 1fr 1fr;
   display: grid;
-}
+} */
 
 .logo-50 {
   object-fit: contain;
@@ -296,24 +296,24 @@ html {
   height: 50px;
 }
 
-.text-and-img__block {
+/* .text-and-img__block {
   column-gap: 20px;
-}
+} */
 
-.pb-40pcr {
+/* .pb-40pcr {
   padding-bottom: 40%;
-}
+} */
 
-.title__link-36 {
+/* .title__link-36 {
   font-size: 36px;
   font-weight: 700;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
-}
+} */
 
-.logo-120 {
+/* .logo-120 {
   height: 120px;
-}
+} */
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.67);
@@ -324,17 +324,12 @@ html {
   color: rgb(255, 255, 255);
 }
 
-.title-60 {
+/* .title-60 {
   font-size: 60px;
   font-weight: 700;
   text-transform: capitalize;
-}
-.club-head__data {
-  align-items: center;
-  display: flex;
-  column-gap: 30px;
-  text-transform: capitalize;
-}
+} */
+ 
 
 @media (max-width: 767.98px) {
   body.lock {
