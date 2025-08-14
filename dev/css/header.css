@@ -147,7 +147,7 @@
 
   .header__nav_list {
     flex-direction: column;
-    row-gap: 1.25rem;
+    row-gap: 25px;
     align-items: flex-end;
     align-content: end;
     flex-wrap: nowrap;
